@@ -1,0 +1,38 @@
+# Пустой шаблон. Проще всего попросить агента: «хочу дайджест про …» (он прочтёт `digest prompt new`).
+title: Мой дайджест
+language: ru                # язык текста дайджеста
+timezone: Europe/Moscow
+reader: >-
+  Кто читает и зачем. Например: «продакт-менеджер финтеха, нужно знать о решениях регуляторов и запусках
+  конкурентов». Это главный ориентир для отбора и тона.
+style: Коротко, с цифрами и датами.
+remind_after_days: null
+
+cadences:
+  daily: {enabled: true, max_age_hours: 36}   # что старше — уже не новость
+  weekly: {enabled: true, weekday: 0}         # 0 = понедельник
+  monthly: {enabled: true, day: 1}
+
+delivery:
+  file: true                # out/<id>/<дата>-<контур>.md
+  email: []
+  telegram_chat_id: null
+
+news_search: {provider: google, hl: ru, gl: RU}
+
+blocks:
+  - id: main
+    title: Главное
+    brief: >-
+      Что важно в этой теме и что не нужно. Пишите как задание живому референту.
+    include: []             # слова-подсказки (повышают приоритет, не фильтр)
+    exclude: []             # материалы с этими словами отбрасываются кодом
+    watchlist: []           # компании / продукты / бумаги / люди: [{name: X, aliases: [...], query: "..."}]
+    require_watch_match: false
+    max_items: 5
+    sources:
+      # - {url: "https://example.com/blog/"}                      # kind: auto — найдёт RSS или ссылки на статьи
+      # - {kind: rss, url: "https://example.com", feed_url: "https://example.com/feed"}
+      # - {kind: telegram, url: "https://t.me/s/channel"}
+      # - {kind: news_search, query: "запрос для поиска новостей"}
+      - {kind: news_search, query: "замените на свой запрос"}

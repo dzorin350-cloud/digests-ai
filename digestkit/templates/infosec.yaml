@@ -1,0 +1,97 @@
+# Шаблон: дайджест ИБ (бывший стенд «Дайджест ИБ» — его код лежит в ветке legacy/infosec-stand).
+# Два блока: технический (атаки и уязвимости) и для руководства. Источники проверены в октябре 2026,
+# перед запуском прогоните `digest sources check <id>`.
+title: Дайджест ИБ
+language: ru
+timezone: Europe/Moscow
+reader: >-
+  Специалист и руководитель по ИБ российской компании (энергетика и промышленность). Нужны атаки на
+  российские организации, уязвимости с эксплойтами в распространённом ПО, крупные инциденты и изменения
+  регулирования. Без маркетинга вендоров и общих советов.
+style: Коротко, по делу, с CVE и названиями группировок, без оценочных слов.
+remind_after_days: null
+
+cadences:
+  daily: {enabled: true, max_age_hours: 48}
+  weekly: {enabled: true, weekday: 0}     # понедельник
+  monthly: {enabled: true, day: 1}
+
+delivery:
+  file: true
+  email: []                 # ["me@example.com"]
+  telegram_chat_id: null    # "123456789"
+
+blocks:
+  - id: threats
+    title: Атаки и уязвимости
+    ref: T
+    brief: >-
+      Конкретные атаки, кампании и группировки (особенно против организаций РФ, энергетики, промышленности,
+      АСУ ТП), уязвимости с эксплойтами или в каталоге CISA KEV, критичные патчи распространённого ПО
+      (Windows, Exchange, VMware, Fortinet, Citrix, 1С, Bitrix). Не нужны: обзоры техник без кампании,
+      вебинары, реклама продуктов.
+    include: [CVE, эксплойт, APT, шифровальщик, ransomware, KEV, АСУ ТП, SCADA]
+    exclude: [вебинар, скидка, конкурс]
+    max_items: 7
+    sources:
+      - {url: "https://rt-solar.ru/solar-4rays/blog/", kind: "html", name: "Solar 4RAYS — блог", trust: 0.9, selectors: {link_pattern: "^https://rt-solar\\.ru/solar-4rays/blog/\\d+/"}}
+      - {url: "https://bi.zone/expertise/blog/", kind: "html", name: "BI.ZONE — блог", trust: 0.9, selectors: {link_pattern: "^https://bi\\.zone/expertise/blog/[a-z0-9-]{10,}/$"}}
+      - {url: "https://habr.com/ru/hubs/infosecurity/articles/", feed_url: "https://habr.com/ru/rss/hubs/infosecurity/articles/?fl=ru", kind: "rss", name: "Хабр — ИБ (статьи)", trust: 0.6}
+      - {url: "https://www.f6.ru/blog/", kind: "html", name: "F6 — блог", trust: 0.9, selectors: {link_pattern: "^https://www\\.f6\\.ru/blog/[a-z0-9-]{4,}/$"}}
+      - {url: "https://securelist.ru/", feed_url: "https://securelist.ru/feed/", kind: "rss", name: "Securelist (Kaspersky)", trust: 0.9}
+      - {url: "https://unit42.paloaltonetworks.com/category/threat-research/", feed_url: "https://unit42.paloaltonetworks.com/category/threat-research/feed/", kind: "rss", name: "Unit 42 — Threat Research", trust: 0.85}
+      - {url: "https://cloud.google.com/blog/topics/threat-intelligence", feed_url: "https://feeds.feedburner.com/threatintelligence/pvexyqv7v0v", kind: "rss", name: "Google Cloud — Threat Intelligence", trust: 0.85}
+      - {url: "https://www.ctfiot.com/blog", feed_url: "https://www.ctfiot.com/feed/", kind: "rss", name: "CTFIoT — блог", trust: 0.5}
+      - {url: "https://www.fortinet.com/blog/threat-research", kind: "html", name: "Fortinet — Threat Research", trust: 0.85, selectors: {link_pattern: "^https://www\\.fortinet\\.com/blog/threat-research/[a-z0-9-]{10,}$"}}
+      - {url: "https://blog.xlab.qianxin.com/", feed_url: "https://blog.xlab.qianxin.com/rss/", kind: "rss", name: "XLab Qianxin", trust: 0.8}
+      - {url: "https://www.netskope.com/the-lens/threat-research", feed_url: "https://www.netskope.com/feed", kind: "rss", name: "Netskope — Threat Research", trust: 0.75}
+      - {url: "https://blog.nviso.eu/", feed_url: "https://blog.nviso.eu/feed/", kind: "rss", name: "NVISO Labs", trust: 0.75}
+      - {url: "https://www.microsoft.com/en-us/security/blog/content-type/research/", feed_url: "https://www.microsoft.com/en-us/security/blog/content-type/research/feed/", kind: "rss", name: "Microsoft Security — Research", trust: 0.9}
+      - {url: "https://asec.ahnlab.com/ko/", feed_url: "https://asec.ahnlab.com/ko/feed/", kind: "rss", name: "AhnLab ASEC", trust: 0.75}
+      - {url: "https://research.checkpoint.com/", feed_url: "https://research.checkpoint.com/feed/", kind: "rss", name: "Check Point Research", trust: 0.85}
+      - {url: "https://1275.ru/", feed_url: "https://1275.ru/feed", kind: "rss", name: "1275.ru", trust: 0.6}
+      - {url: "https://t.me/s/alukatsky", kind: "telegram", name: "TG @alukatsky", trust: 0.7}
+      - {url: "https://t.me/s/SecLabNews", kind: "telegram", name: "TG @SecLabNews", trust: 0.6}
+      - {url: "https://t.me/s/RedTeambro", kind: "telegram", name: "TG @RedTeambro", trust: 0.6}
+      - {url: "https://t.me/s/cyberguerre", kind: "telegram", name: "TG @cyberguerre", trust: 0.6}
+      - {url: "https://t.me/s/true_secator", kind: "telegram", name: "TG @true_secator", trust: 0.7}
+      - {url: "https://t.me/s/OffensiveTwitter", kind: "telegram", name: "TG @OffensiveTwitter", trust: 0.6}
+      - {url: "https://t.me/s/ZerodayAlert", kind: "telegram", name: "TG @ZerodayAlert", trust: 0.6}
+      - {url: "https://t.me/s/poxek", kind: "telegram", name: "TG @poxek", trust: 0.6}
+      - {url: "https://t.me/s/purpleshift", kind: "telegram", name: "TG @purpleshift", trust: 0.75}
+      - {url: "https://t.me/s/proxy_bar", kind: "telegram", name: "TG @proxy_bar", trust: 0.6}
+      - {url: "https://t.me/s/cyberok_news", kind: "telegram", name: "TG @cyberok_news", trust: 0.75}
+      - {url: "https://t.me/s/CyberSquattingChannel", kind: "telegram", name: "TG @CyberSquattingChannel", trust: 0.55}
+      - {url: "https://t.me/s/knowyouradversary", kind: "telegram", name: "TG @knowyouradversary", trust: 0.7}
+      - {url: "https://t.me/s/ThreatHuntingFather", kind: "telegram", name: "TG @ThreatHuntingFather", trust: 0.65}
+      - {url: "https://t.me/s/ptescalator", kind: "telegram", name: "TG @ptescalator", trust: 0.8}
+      - {url: "https://t.me/s/four_rays", kind: "telegram", name: "TG @four_rays", trust: 0.8}
+      - {url: "https://t.me/s/bitrixkiberbez", kind: "telegram", name: "TG @bitrixkiberbez", trust: 0.6}
+      - {url: "https://t.me/s/detectioneasy", kind: "telegram", name: "TG @detectioneasy", trust: 0.65}
+      - {url: "https://xakep.ru/category/news/", feed_url: "https://xakep.ru/category/news/feed/", kind: "rss", name: "Хакер — новости", trust: 0.7}
+  - id: mgmt
+    title: ИБ для руководства
+    ref: M
+    brief: >-
+      Крупные инциденты и утечки, атаки на критическую инфраструктуру, финансовые и репутационные потери,
+      законы и требования регуляторов (ФСТЭК, Минцифры, ЦБ), штрафы и суды, громкие кадровые события.
+      Без технических деталей.
+    exclude: [вебинар, конкурс]
+    max_items: 5
+    sources:
+      - {url: "https://ria.ru/product_informatsionnaya-bezopasnost/", kind: "html", name: "РИА Новости — ИБ", trust: 0.65, selectors: {link_pattern: "^https://ria\\.ru/20\\d{6}/[a-z0-9-]+\\.html$"}}
+      - {url: "https://www.infowatch.ru/analytics/novosti-ib", kind: "html", name: "InfoWatch — новости ИБ", trust: 0.75, selectors: {link_pattern: "^https://www\\.infowatch\\.ru/analytics/novosti-ib/[a-z0-9-]{10,}$"}}
+      - {url: "https://www.kaspersky.ru/about/press-releases", kind: "html", name: "Лаборатория Касперского — пресс-релизы", trust: 0.8, selectors: {link_pattern: "^https://www\\.kaspersky\\.ru/about/press-releases/[a-z0-9-]{15,}$"}}
+      - {url: "https://safe-surf.ru/specialists/news/", feed_url: "https://safe-surf.ru/rss", kind: "rss", name: "Safe-Surf — новости", trust: 0.7}
+      - {url: "https://securenews.ru/news/", kind: "html", name: "SecureNews", trust: 0.6, selectors: {link_pattern: "^https://securenews\\.ru/[a-z0-9-]{15,}/$"}}
+      - {url: "https://www.securityvision.ru/news/", kind: "html", name: "Security Vision — новости", trust: 0.6, selectors: {link_pattern: "^https://www\\.securityvision\\.ru/news/[a-z0-9-]{10,}/$"}}
+      - {url: "https://www.kommersant.ru/archive/theme/1267", kind: "html", name: "Коммерсантъ — ИБ", trust: 0.75, selectors: {link_pattern: "^https://www\\.kommersant\\.ru/doc/\\d+$"}}
+      - {url: "https://www.comnews.ru/information_security", kind: "html", name: "ComNews — ИБ", trust: 0.65, selectors: {link_pattern: "^https://www\\.comnews\\.ru/content/\\d+/"}}
+      - {url: "https://infobezopasnost.ru/blog/news/", feed_url: "https://infobezopasnost.ru/blog/news/feed/", kind: "rss", name: "Infobezopasnost.ru — новости", trust: 0.55}
+      - {url: "https://cisoclub.ru/category/news/", kind: "html", name: "CISOCLUB — новости", trust: 0.7, selectors: {link_pattern: "^https://cisoclub\\.ru/[a-z0-9-]{25,}/$"}}
+      - {url: "https://habr.com/ru/hubs/infosecurity/news/", feed_url: "https://habr.com/ru/rss/hubs/infosecurity/news/?fl=ru", kind: "rss", name: "Хабр — ИБ (новости)", trust: 0.6}
+      - {url: "https://www.itsec.ru/news/all", feed_url: "https://www.itsec.ru/news/rss.xml", kind: "rss", name: "ITSec.ru — новости", trust: 0.6}
+      - {url: "https://www.anti-malware.ru/news", kind: "html", name: "Anti-Malware — новости", trust: 0.75, selectors: {link_pattern: "^https://www\\.anti-malware\\.ru/news/20\\d\\d-\\d\\d-\\d\\d-\\d+/\\d+$", body: "div.node-news div.field-name-body"}}
+      - {url: "https://securitymedia.org/news/", kind: "html", name: "SecurityMedia — новости", trust: 0.6, selectors: {link_pattern: "^https://securitymedia\\.org/news/[a-z0-9-]{15,}\\.html$"}}
+      - {url: "https://cybernews.com/security/", kind: "html", name: "Cybernews — Security", trust: 0.6, selectors: {link_pattern: "^https://cybernews\\.com/security/[a-z0-9-]{15,}/$"}}
+      - {url: "https://www.tadviser.ru/", feed_url: "https://www.tadviser.ru/xml/tadviser.xml", kind: "rss", name: "TAdviser", trust: 0.6}

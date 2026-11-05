@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SecAtor – Telegram</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible"
+     content="IE=edge" />
+    <meta name="MobileOptimized" content="176" />
+    <meta name="HandheldFriendly" content="True" />
+    
+<meta property="og:title" content="SecAtor">
+<meta property="og:image" content="https://cdn4.telesco.pe/file/Yu2Ujz-ku1RJfRS7sBPfwcRMl3I3aapcXq9DckUE3Qw-zaEQ_HpTrNEym04RSpdfdVol6MfY4_tK78Hrh2S31NDbTNKlpu3tYrq8-qQgvPMAjXF3jZpeHagK8ma7LSDgVpOHiQhcMTRDAwXK02Z4t-k93zED-lQDdh0Ql4ONSb7nBt5eW4t4HJ8nn7mylv0wiIWtZg9K4hZyEgcj-AyIEq0TO9tpzCfzLhjtE2CtsNVUiSx2Tanqi1JzqMk48F6tWU-aDJGWh8CzyTlY9-12jakROf52rUQWmBl9Rbfq7_18J-Mq8zelQDk78QY2Vs83bzsx64ypn27O0YjvcH-NnQ.jpg">
+<meta property="og:site_name" content="Telegram">
+<meta property="og:description" content="Руки-ножницы российского инфосека.
+
+Для связи - mschniperson@mailfence.com">
+
+<meta property="twitter:title" content="SecAtor">
+<meta property="twitter:image" content="https://cdn4.telesco.pe/file/Yu2Ujz-ku1RJfRS7sBPfwcRMl3I3aapcXq9DckUE3Qw-zaEQ_HpTrNEym04RSpdfdVol6MfY4_tK78Hrh2S31NDbTNKlpu3tYrq8-qQgvPMAjXF3jZpeHagK8ma7LSDgVpOHiQhcMTRDAwXK02Z4t-k93zED-lQDdh0Ql4ONSb7nBt5eW4t4HJ8nn7mylv0wiIWtZg9K4hZyEgcj-AyIEq0TO9tpzCfzLhjtE2CtsNVUiSx2Tanqi1JzqMk48F6tWU-aDJGWh8CzyTlY9-12jakROf52rUQWmBl9Rbfq7_18J-Mq8zelQDk78QY2Vs83bzsx64ypn27O0YjvcH-NnQ.jpg">
+<meta property="twitter:site" content="@Telegram">
+
+<meta property="al:ios:app_store_id" content="686449807">
+<meta property="al:ios:app_name" content="Telegram Messenger">
+<meta property="al:ios:url" content="tg://resolve?domain=true_secator">
+
+<meta property="al:android:url" content="tg://resolve?domain=true_secator">
+<meta property="al:android:app_name" content="Telegram">
+<meta property="al:android:package" content="org.telegram.messenger">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@Telegram">
+<meta name="twitter:description" content="Руки-ножницы российского инфосека.
+
+Для связи - mschniperson@mailfence.com
+">
+
+    <link rel="prev" href="/s/true_secator?before=8651">
+<link rel="canonical" href="/s/true_secator?before=8671">
+
+    <script>window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches&&document.documentElement&&document.documentElement.classList&&document.documentElement.classList.add('theme_dark');</script>
+    <link rel="icon" type="image/svg+xml" href="//telegram.org/img/website_icon.svg?4">
+<link rel="apple-touch-icon" sizes="180x180" href="//telegram.org/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="//telegram.org/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="//telegram.org/img/favicon-16x16.png">
+<link rel="alternate icon" href="//telegram.org/img/favicon.ico" type="image/x-icon" />
+    <link href="//telegram.org/css/font-roboto.css?1" rel="stylesheet" type="text/css">
+    <link href="//telegram.org/css/widget-frame.css?75" rel="stylesheet" media="screen">
+    <link href="//telegram.org/css/telegram-web.css?39" rel="stylesheet" media="screen">
+    <script>TBaseUrl='/';</script>
+    <style>        .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3391d4 0px, #3391d4 5px, #7dd3f0 5px, #7dd3f0 10px);
+          --user-accent-color: #3391d4;
+          --user-background: #3391d41f;
+        }        .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27a910 0px, #27a910 5px, #a7dc57 5px, #a7dc57 10px);
+          --user-accent-color: #27a910;
+          --user-background: #27a9101f;
+        }        .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e0802b 0px, #e0802b 5px, #fac534 5px, #fac534 10px);
+          --user-accent-color: #e0802b;
+          --user-background: #e0802b1f;
+        }        .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #e15052 0px, #e15052 5px, #f9ae63 5px, #f9ae63 10px);
+          --user-accent-color: #e15052;
+          --user-background: #e150521f;
+        }        .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a05ff3 0px, #a05ff3 5px, #f48fff 5px, #f48fff 10px);
+          --user-accent-color: #a05ff3;
+          --user-background: #a05ff31f;
+        }        .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #27acce 0px, #27acce 5px, #82e8d6 5px, #82e8d6 10px);
+          --user-accent-color: #27acce;
+          --user-background: #27acce1f;
+        }        .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #dd4371 0px, #dd4371 5px, #ffbe9f 5px, #ffbe9f 10px);
+          --user-accent-color: #dd4371;
+          --user-background: #dd43711f;
+        }        .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #247bed 0px, #247bed 5px, #f04856 5px, #f04856 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #247bed;
+          --user-background: #247bed1f;
+        }        .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #d67722 0px, #d67722 5px, #1ea011 5px, #1ea011 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #d67722;
+          --user-background: #d677221f;
+        }        .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #179e42 0px, #179e42 5px, #e84a3f 5px, #e84a3f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #179e42;
+          --user-background: #179e421f;
+        }        .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #2894af 0px, #2894af 5px, #6fc456 5px, #6fc456 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #2894af;
+          --user-background: #2894af1f;
+        }        .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #0c9ab3 0px, #0c9ab3 5px, #ffad95 5px, #ffad95 10px, #ffe6b5 10px, #ffe6b5 15px);
+          --user-accent-color: #0c9ab3;
+          --user-background: #0c9ab31f;
+        }        .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #7757d6 0px, #7757d6 5px, #f79610 5px, #f79610 10px, #ffde8e 10px, #ffde8e 15px);
+          --user-accent-color: #7757d6;
+          --user-background: #7757d61f;
+        }        .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #1585cf 0px, #1585cf 5px, #f2ab1d 5px, #f2ab1d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #1585cf;
+          --user-background: #1585cf1f;
+        }        body.dark .user-color-12, html.theme_dark .user-color-12 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #52bfff 0px, #52bfff 5px, #0b5494 5px, #0b5494 10px);
+          --user-accent-color: #52bfff;
+          --user-background: #52bfff1f;
+        }        body.dark .user-color-10, html.theme_dark .user-color-10 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #a7eb6e 0px, #a7eb6e 5px, #167e2d 5px, #167e2d 10px);
+          --user-accent-color: #a7eb6e;
+          --user-background: #a7eb6e1f;
+        }        body.dark .user-color-8, html.theme_dark .user-color-8 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ecb04e 0px, #ecb04e 5px, #c35714 5px, #c35714 10px);
+          --user-accent-color: #ecb04e;
+          --user-background: #ecb04e1f;
+        }        body.dark .user-color-7, html.theme_dark .user-color-7 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff9380 0px, #ff9380 5px, #992f37 5px, #992f37 10px);
+          --user-accent-color: #ff9380;
+          --user-background: #ff93801f;
+        }        body.dark .user-color-9, html.theme_dark .user-color-9 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #c697ff 0px, #c697ff 5px, #5e31c8 5px, #5e31c8 10px);
+          --user-accent-color: #c697ff;
+          --user-background: #c697ff1f;
+        }        body.dark .user-color-11, html.theme_dark .user-color-11 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #40d8d0 0px, #40d8d0 5px, #045c7f 5px, #045c7f 10px);
+          --user-accent-color: #40d8d0;
+          --user-background: #40d8d01f;
+        }        body.dark .user-color-13, html.theme_dark .user-color-13 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff86a6 0px, #ff86a6 5px, #8e366e 5px, #8e366e 10px);
+          --user-accent-color: #ff86a6;
+          --user-background: #ff86a61f;
+        }        body.dark .user-color-14, html.theme_dark .user-color-14 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3fa2fe 0px, #3fa2fe 5px, #e5424f 5px, #e5424f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3fa2fe;
+          --user-background: #3fa2fe1f;
+        }        body.dark .user-color-15, html.theme_dark .user-color-15 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #ff905e 0px, #ff905e 5px, #32a527 5px, #32a527 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #ff905e;
+          --user-background: #ff905e1f;
+        }        body.dark .user-color-16, html.theme_dark .user-color-16 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #66d364 0px, #66d364 5px, #d5444f 5px, #d5444f 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #66d364;
+          --user-background: #66d3641f;
+        }        body.dark .user-color-17, html.theme_dark .user-color-17 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #3da240 5px, #3da240 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-18, html.theme_dark .user-color-18 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #22bce2 0px, #22bce2 5px, #ff9778 5px, #ff9778 10px, #ffda6b 10px, #ffda6b 15px);
+          --user-accent-color: #22bce2;
+          --user-background: #22bce21f;
+        }        body.dark .user-color-19, html.theme_dark .user-color-19 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #9791ff 0px, #9791ff 5px, #f2731d 5px, #f2731d 10px, #ffdb59 10px, #ffdb59 15px);
+          --user-accent-color: #9791ff;
+          --user-background: #9791ff1f;
+        }        body.dark .user-color-20, html.theme_dark .user-color-20 {
+          --user-line-gradient: repeating-linear-gradient(-45deg, #3da6eb 0px, #3da6eb 5px, #eea51d 5px, #eea51d 10px, #ffffff 10px, #ffffff 15px);
+          --user-accent-color: #3da6eb;
+          --user-background: #3da6eb1f;
+        }.user-color-6, .user-color-4, .user-color-2, .user-color-0, .user-color-1, .user-color-3, .user-color-5,   .user-color-default {
+    --user-accent-color: var(--accent-color);
+    --user-accent-background: var(--accent-background);
+    --user-line-gradient: linear-gradient(45deg, var(--accent-color), var(--accent-color));
+  }</style>
+  </head>
+  <body class="widget_frame_base tgme_webpreview emoji_image thin_box_shadow tme_mode no_transitions">
+    <div class="tgme_background_wrap">
+      <canvas id="tgme_background" class="tgme_background" width="50" height="50" data-colors="dbddbb,6ba587,d5d88d,88b884"></canvas>
+      <div class="tgme_background_pattern"></div>
+    </div>
+    <header class="tgme_header search_collapsed">
+  <div class="tgme_container">
+    <div class="tgme_header_search">
+      <form class="tgme_header_search_form" action="/s/true_secator">
+        <svg class="tgme_header_search_form_icon" width="20" height="20" viewBox="0 0 20 20"><g fill="none" stroke="#7D7F81" stroke-width="1.4"><circle cx="9" cy="9" r="6"></circle><path d="M13.5,13.5 L17,17" stroke-linecap="round"></path></g></svg>
+        <input class="tgme_header_search_form_input js-header_search" placeholder="Search" name="q" autocomplete="off" value="" />
+        <a href="/s/true_secator" class="tgme_header_search_form_clear"><svg class="tgme_action_button_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20"><g class="icon_body" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000000" stroke-width="1.5"><path d="M6 14l8-8m0 8L6 6" stroke-dasharray="0,11.314" stroke-dashoffset="5.657"/><path d="M26 14l8-8m0 8l-8-8" stroke-dasharray="0.371,10.943" stroke-dashoffset="5.842"/><path d="M46 14l8-8m0 8l-8-8" stroke-dasharray="1.982,9.332" stroke-dashoffset="6.647756"/><path d="M66 14l8-8m0 8l-8-8" stroke-dasharray="5.173,6.14" stroke-dashoffset="8.243"/><path d="M86 14l8-8m0 8l-8-8" stroke-dasharray="7.866,3.448" stroke-dashoffset="9.59"/><path d="M106 14l8-8m0 8l-8-8" stroke-dasharray="9.471,1.843" stroke-dashoffset="10.392"/><path d="M126 14l8-8m0 8l-8-8" stroke-dasharray="10.417,0.896" stroke-dashoffset="10.866"/><path d="M146 14l8-8m0 8l-8-8" stroke-dasharray="10.961,0.353" stroke-dashoffset="11.137"/><path d="M166 14l8-8m0 8l-8-8" stroke-dasharray="11.234,0.08" stroke-dashoffset="11.274"/><path d="M186 14l8-8m0 8l-8-8"/></g></svg></a>
+      </form>
+    </div>
+    <div class="tgme_header_right_column">
+      <section class="tgme_right_column">
+        <div class="tgme_channel_info">
+          <div class="tgme_channel_info_header">
+            <i class="tgme_page_photo_image bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i>
+            <div class="tgme_channel_info_header_title_wrap">
+              <div class="tgme_channel_info_header_title"><span dir="auto">SecAtor</span></div>
+              <div class="tgme_channel_info_header_labels"></div>
+            </div>
+            <div class="tgme_channel_info_header_username"><a href="https://t.me/true_secator">@true_secator</a></div>
+          </div>
+          <div class="tgme_channel_info_counters"><div class="tgme_channel_info_counter"><span class="counter_value">41.8K</span> <span class="counter_type">subscribers</span></div><div class="tgme_channel_info_counter"><span class="counter_value">827</span> <span class="counter_type">photos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">88</span> <span class="counter_type">videos</span></div><div class="tgme_channel_info_counter"><span class="counter_value">12</span> <span class="counter_type">files</span></div><div class="tgme_channel_info_counter"><span class="counter_value">7.99K</span> <span class="counter_type">links</span></div></div>
+          <div class="tgme_channel_info_description">Руки-ножницы российского инфосека.<br/><br/>Для связи - mschniperson@mailfence.com</div>
+          <a class="tgme_channel_download_telegram" href="//telegram.org/dl?tme=ddc493802aa5071f46_3523594835515102631">
+            <svg class="tgme_channel_download_telegram_icon" width="21px" height="18px" viewBox="0 0 21 18"><g fill="none"><path fill="#ffffff" d="M0.554,7.092 L19.117,0.078 C19.737,-0.156 20.429,0.156 20.663,0.776 C20.745,0.994 20.763,1.23 20.713,1.457 L17.513,16.059 C17.351,16.799 16.62,17.268 15.88,17.105 C15.696,17.065 15.523,16.987 15.37,16.877 L8.997,12.271 C8.614,11.994 8.527,11.458 8.805,11.074 C8.835,11.033 8.869,10.994 8.905,10.958 L15.458,4.661 C15.594,4.53 15.598,4.313 15.467,4.176 C15.354,4.059 15.174,4.037 15.036,4.125 L6.104,9.795 C5.575,10.131 4.922,10.207 4.329,10.002 L0.577,8.704 C0.13,8.55 -0.107,8.061 0.047,7.614 C0.131,7.374 0.316,7.182 0.554,7.092 Z"></path></g></svg>Download Telegram
+          </a>
+          <div class="tgme_footer">
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/faq">About</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/blog">Blog</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//telegram.org/apps">Apps</a></h5>
+            </div>
+            <div class="tgme_footer_column">
+              <h5><a href="//core.telegram.org/">Platform</a></h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="tgme_header_info">
+      <a class="tgme_channel_join_telegram" href="//telegram.org/dl?tme=ddc493802aa5071f46_3523594835515102631">
+        <svg class="tgme_channel_join_telegram_icon" width="19px" height="16px" viewBox="0 0 19 16"><g fill="none"><path fill="#ffffff" d="M0.465,6.638 L17.511,0.073 C18.078,-0.145 18.714,0.137 18.932,0.704 C19.009,0.903 19.026,1.121 18.981,1.33 L16.042,15.001 C15.896,15.679 15.228,16.111 14.549,15.965 C14.375,15.928 14.211,15.854 14.068,15.748 L8.223,11.443 C7.874,11.185 7.799,10.694 8.057,10.345 C8.082,10.311 8.109,10.279 8.139,10.249 L14.191,4.322 C14.315,4.201 14.317,4.002 14.195,3.878 C14.091,3.771 13.926,3.753 13.8,3.834 L5.602,9.138 C5.112,9.456 4.502,9.528 3.952,9.333 L0.486,8.112 C0.077,7.967 -0.138,7.519 0.007,7.11 C0.083,6.893 0.25,6.721 0.465,6.638 Z"></path></g></svg>Join
+      </a>
+      <a class="tgme_header_link" href="https://t.me/true_secator">
+        <i class="tgme_page_photo_image bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i>
+        <div class="tgme_header_title_wrap">
+          <div class="tgme_header_title"><span dir="auto">SecAtor</span></div>
+          <div class="tgme_header_labels"></div>
+        </div>
+        <div class="tgme_header_counter">41.8K subscribers</div>
+      </a>
+    </div>
+  </div>
+</header>
+<main class="tgme_main" data-url="/true_secator">
+  <div class="tgme_container">
+    <section class="tgme_channel_history js-message_history">
+      <div class="tgme_widget_message_centered js-messages_more_wrap"><a href="/s/true_secator?before=8651" class="tme_messages_more js-messages_more" data-before="8651"></a></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8651" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1MSwidCI6MTc5MDkyMDUyOCwiaCI6IjJmYWY5ZTE5Y2NiN2EyYzJlOSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Новый ботнет под названием <b>Carbonato</b> нацелен на незащищенные хосты <b>Docker</b> с целью установки фреймворка <b>Hermes Agent AI </b>и получения контроля над системой.<br/><br/>Вредоносная ПО обладает червеобразными свойствами и была обнаружена в реестре <b>Docker</b>, содержащем около 60 репозиториев и 4,3 ГБ данных образов.<br/><br/>Исследователи <b>ThreatDown</b> <a href="https://www.threatdown.com/blog/carbonato/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>проанализировали</u></a> артефакты за период с октября 2024 года по август 2026 года. Архив также содержал подробную информацию о ботнете и отдельной кампании по распространению поддельных приложений для криптокошельков.<br/><br/>По данным <b>ThretDown, Carbonato </b>распространяется по хостам <b>Docker</b>, предоставляя API через порт 2375 без аутентификации. Вредоносная ПО подключается к этому API и дает указание демону запустить привилегированный контейнер, предоставляя ему доступ к хосту.<br/><br/>Затем скрипт открывает обратный SSH-туннель, устанавливает SSH-сервер с ключом оператора и сообщает о новом развертывании через <b>Telegram</b>. Одновременно скрипты настраивают задания <b>cron</b>, таймеры systemd, rc.local и хуки <b>OpenRC</b> для обеспечения постоянного доступа.<br/><br/>Примечательным аспектом атаки является то, что на хостах установлена платформа для работы с ИИ-агентами <b>Hermes Agent</b>, использующая агента с именем <b>GH0ST</b>, инструкции которого перезаписывают стандартный файл описания пользователя <a href="http://SOUL.md/" target="_blank" rel="noopener">SOUL.md</a>.<br/><br/>В последнее время <b>Hermes</b> активно используется в киберпреступности. Как мы уже сообщали, недавно <b>Gambit</b> задокументировала масштабную операцию по скиммингу банковских карт, в результате которой были украдены данные 600 000 кредитных карт.<br/><br/>В случае с <b>Carbonato, Hermes</b> обрабатывает команды, полученные через <b>Telegram</b>, включая сбор ключей API для <b>ИИ</b>, учетных данных <b>SSH</b>, токенов доступа и других данных, выполнение команд и отправку результатов обратно.<br/><br/>Исследователи описывают это как управляемый оператором процесс, включающий обмен данными в рамках «интерактивного цикла команд».<br/><br/>Модель интерпретирует задачу, записывает команды терминала, считывает выходные данные и решает, что делать дальше. Агент выполняет команды и отправляет отчет в чат <b>Telegram</b>, в который также поступают отчеты о развертывании.<br/><br/>Червеобразные свойства вредоносной ПО позволяют ей распространяться на другие открытые демоны <b>Docker</b>, а её обработка осуществляется с помощью скриптов, которые сканируют сети, подключенные к хосту, каждые пять минут.<br/><br/>Каждый новый инцидент приводит к удалению имплантата из реестра, запуску того же самого привилегированного контейнера и включению в цикл обеспечения постоянного присутствия и сканирования.<br/><br/><b>ThreatDown</b> не удалось отнести <b>Carbonato</b> ни к одному из известных кластеров угроз, но, основываясь на различных доказательствах, указывает на <b>Коста-Рику </b>как на возможное местонахождение оператора.<br/><br/>Для предотвращения заражения исследователи рекомендуют не использовать API демона <b>Docker</b> в сети и требовать аутентификацию в реестрах.<br/><br/>Признаками атак <b>Carbonato</b> являются файл с именем пользователя <b>GH0ST</b>, параметр CARBONATO_API_KEY, неожиданный трафик в <b>Telegram</b> и обратные SSH-туннели в сторону <b>AS262145</b>.</div><a class="tgme_widget_message_link_preview" href="https://threatdown.com/blog/carbonato">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">ThreatDown</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/Af3F42RHUSAId4BejCWd8HchFcuF5qW9oFijbiQSctXk07ClfXYT_VymH3CYGQRb7bXKxUzMLqHdy_bWNwVgWwutmFh2VqbG0iWcbcirUCiDothTGePGG1wyVNmpDdpS3EIpafhSCcv8vMjzsgCEdnYkE7VFpVpX16RplMSKR2PqfgzMDCOeQVQqjqLXpGEZvRnKxNFKj-c1v33VJvZYlCtKEho7eJcOTWKbogpCcKSL9BvcrFodN-XZfGN-oX8Pd3hiW9gugejnZv145uH4kfqZQdrKGwQA8D9zd0RwCpfux8c7Nh0nehb3AAJ9waWy83YyUXp8vgNG55BAvlbIJQ.jpg');padding-top:56.125%"></i>
+  <div class="link_preview_title" dir="auto">​CARBONATO:​ ​a​ ​botnet​ ​built​ ​around an AI agent​ | ThreatDown</div>
+  <div class="link_preview_description" dir="auto">​ThreatDown​ ​researchers​ ​uncovered​ ​CARBONATO,​ ​a​ ​Docker​ ​botnet​ ​built​ ​around​ ​an​ ​AI​ ​agent​ ​that​ ​compromises​ ​exposed​ ​Docker​ ​daemons,​ ​spreads​ ​across​ ​reachable​ ​hosts,​ ​and​ ​gives​ ​operators​ ​a​ ​Telegram-controlled​ ​tool​​…</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">7.17K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8651"><time datetime="2026-09-25T17:00:03+00:00" class="time">17:00</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8652" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1MiwidCI6MTc5MDkyMDUyOCwiaCI6IjJmYjY2YTBhM2YxNzdhYTdkZSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+<div class="tgme_widget_message_forwarded_from accent_color">Forwarded from&nbsp;<a class="tgme_widget_message_forwarded_from_name" href="https://t.me/Russian_OSINT/7969"><span dir="auto">Russian OSINT</span></a></div>
+
+<div class="media_supported_cont"><a class="tgme_widget_message_photo_wrap 5888457758787441001 1371013410_460001641" href="https://t.me/true_secator/8652" style="width:800px;background-image:url('https://cdn4.telesco.pe/file/b1xHpqbMUgaLdU9ERKcUCZIFebALqFp7Y_dy0qLo5szxP_o7T-hbnkGjycwTNpOAyUsOda3lzk0m8a5K6raCAKtAmWW8__LMeoKq41vmpUiPNrwwK22q6rpdewXId7_DJsLkpuopiEajMS-QRRAu2WFpzS5FeC5DArMJcaEWEgd7gXLKsl_E7kTbZQTS2CldL7J31Wln-PU4ycZqB-jbNgv-T3ukS4KZHOC778G2OzZSfQQ9f3hFOYPRi_yrUauHAlkVu-An6b9N3I8PmEh_MuP1cdyU42CSf7LqNG1A_RZhnXKgvyk3oNtkCUoH40fFkbDnXgp89TL5C7HUHV63bw.jpg')">
+  <div class="tgme_widget_message_photo" style="padding-top:56.125%"></div>
+</a><div class="tgme_widget_message_text js-message_text" dir="auto"><tg-emoji emoji-id="5429101935049328694"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F929A.png')"><b>💚</b></i></tg-emoji> <b>Три зарубежные дочерние компании «Лаборатории Касперского» перешли под контроль <i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/F09F87A6F09F87AA.png')"><b>🇦🇪</b></i>дубайской компании Investikas Holding Limited</b><br/><br/>Как сообщает <a href="https://www.rbc.ru/technology_and_media/25/09/2026/6ab548f69a79477fe2364150" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">РБК</a>, «Лаборатория Касперского» начала переводить зарубежные активы из владения британской Kaspersky Labs Limited в дубайскую Investikas Holding Limited, зарегистрированную летом 2025 года в свободной экономической зоне Meydan. Переход швейцарской и чешской структур подтверждается коммерческими реестрами этих стран, а смена формы французского подразделения зафиксирована в официальном бюллетене BODACC, где единственным акционером, по данным представителя «Лаборатории Касперского», стала та же Investikas.<br/><br/>Параллельно в марте 2026 года в России было зарегистрировано ООО «Инвестикас», где 92% принадлежит Евгению Касперскому, а 8% — Вадиму Богданову. Те же лица выступают конечными бенефициарами дубайской компании. В «Лаборатории Касперского» подтвердили, что компания «находится в процессе изменений, направленных на переход от вертикально интегрированного холдинга к географически диверсифицированной структуре». Теперь структуры группы связывают общие конечные владельцы, а британское юридическое лицо продолжат использовать только до момента исчерпания операционной необходимости, после чего ликвидируют.<br/><br/>Реорганизация проходит на фоне регуляторного давления со стороны США, хотя в самой компании отрицают связь с решением американских властей. В июне 2024 года Министерство торговли США включило британскую Kaspersky Labs Limited в ограничительный список Entity List, запретив поставку американских технологий с формулировкой «за сотрудничество с российскими военными и разведывательными органами». В сентябре 2025 года американское ведомство распространило действие правил Entity List на любые аффилированные структуры, где лицам из этого списка прямо или косвенно принадлежит от 50%. При этом речь идёт только об экспортных ограничениях, а не о блокировке активов.<br/><br/>Международный бизнес компании показывает финансовый рост. Глобальная выручка за 2025 год увеличилась на 4% и достигла &#036;836 млн. В 2023 году «Лаборатория Касперского» подписала соглашение с китайским производителем тонких клиентов Centerm о предустановке программного обеспечения на базе KasperskyOS. В августе 2024 года компания заявила о планах построить центр обработки данных на юге Китая, а в августе 2026 года в Гуанчжоу представила продукт для защиты систем искусственного интеллекта Kaspersky AI Protect.<br/><br/><tg-emoji emoji-id="6125446382909131260"><i class="emoji" style="background-image:url('//telegram.org/img/emoji/40/E29C8B.png')"><b>✋</b></i></tg-emoji> <a href="https://t.me/Russian_OSINT" target="_blank"><b>@Russian_OSINT</b></a></div></div><div class="media_not_supported_cont"><div class="message_media_not_supported_wrap">
+  <div class="message_media_not_supported">
+    <div class="message_media_not_supported_label">Please open Telegram to view this post</div>
+    <a href="https://t.me/true_secator/8652" class="message_media_view_in_telegram">VIEW IN TELEGRAM</a>
+  </div>
+</div></div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.47K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8652"><time datetime="2026-09-28T12:17:48+00:00" class="time">12:17</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8653" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1MywidCI6MTc5MDkyMDUyOCwiaCI6ImY5ZWUyYjk4ZTUwZTE1OTY4YiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Google</b> в лице <b>Mandiant и GTIG</b> <a href="https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft?e=48754805" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>предупреждает</u></a> о новой массовой кампании <b>ShinyHunters</b>, которой удалось модифицироваnm свой эксплойт для новых атак, нацеленных на уязвимость <b>PeopleSoft</b>.<br/><br/>Комплексное ПО для планирования ресурсов предприятия (ERP) <b>PeopleSoft</b> используется во многих крупных компаниях для управления основными бизнес-функциями, включая финансы, управление персоналом, расчет заработной платы и цепочку поставок.<br/><br/>При этом заявление <b>Google</b> прозвучало спустя четыре месяца после того, как впервые стало известно об использовании хакерской группой 0-day в <b>PeopleSoft</b>, отслеживаемой как CVE-2026-35273, для удаленного выполнения кода без аутентификации.<br/><br/>Тогда в июне <b>ShinyHunters</b> (<b>UNC6240</b>) атаковала более 100 клиентов <b>PeopleSoft</b>, среди подтвержденных жертв - <b>Ноттингемский университет в Великобритании</b>, группа регуляторов страхового рынка <b>NAIC</b> и <b>Nissan</b>.<br/><br/>Новая волна активности связана с тем, что <b>UNC6240</b> модифицировал свой эксплойт для обхода правил брандмауэра веб-приложений (WAF), блокирующих уязвимую конечную точку <b>Environment Management Hub (PSEMHUB).</b><br/><br/>Причем, в ходе недавней атаки на <b>ФБР США</b> хакеры <b>ShinyHunters</b> заявили, что использовали 0-day в <b>PeopleSoft</b>. Возможно, хакеры имеют в виду именно эту модифицированную уязвимость, а не новую уязвимость нулевого дня.&nbsp;<br/><br/>Как сообщает <b>Google</b>, если первоначальная кампания <b>ShinyHunters</b> была сосредоточена на секторе образования, то новая волна атак распространилась на сельское хозяйство, госучреждения, здравоохранение, ИТ, технологические компании и транспортные организации.<br/><br/>В рамках новой кампании хакеры развертывают веб-оболочки на десятках систем, обходя правила WAF с помощью %50, закодированной в URL-адресе формы символа P, в пути запроса, содержащем строку /PSEMHUB.<br/><br/>Многие правила WAF и обратного прокси-сервера сопоставляют буквальный путь до декодирования URL, в то время как сервер приложений <b>PeopleSoft</b> декодирует запрос и направляет его уязвимому сервлету.<br/><br/>Как полагает <b>Google, </b>это позволяет злоумышленнику получить доступ к конечной точке в системах, операторы которых могли полагать, что их правила WAF снизили риск.<br/><br/>Злоумышленники либо отправляли множество POST-запросов для доступа к веб-оболочкам в средах с балансировкой нагрузки, вероятно, для обеспечения развертывания копии веб-оболочки на каждом узле WebLogic, либо отправляли POST-запросы, которые возвращали вывод команд непосредственно в HTTP-ответе для запуска процессов оболочки.<br/><br/><b>Mandiant и GTIG</b> наблюдали, как хакеры обеспечивали постоянное присутствие в системе с помощью двух взаимодополняющих однострочных веб-оболочек <b>JSP</b> и развертывали бэкдор <b>SideEye</b> на серверах <b>Windows</b> для кражи учетных данных из браузеров и приложений, управления файлами и процессами, а также получения возможностей обратной оболочки и обратного прокси.<br/><br/>Кроме того, злоумышленники использовали инструментарий туннелирования с открытым исходным кодом <b>Neo-reGeorg</b> для горизонтального перемещения, а также платформу удаленного управления с открытым исходным кодом <b>MeshCentral</b>.<br/><br/>Они выполняли команды с правами root или System для обнаружения хостов и пользователей, а также проверки процессов. Использовали учетные записи служб <b>PeopleSoft и WebLogic</b> для получения доступа к данным приложений, файлам конфигурации и строкам подключения к базе данных.<br/><br/>Клиентам <b>PeopleSoft</b> рекомендуется установить исправления <b>Oracle</b> для CVE-2026-35273, дабы повысить безопасность своих сред, ориентироваться на актуальные IOCs для выявления потенциальных атак и кражи данных, а также морально подготовиться к вымогательству.</div><a class="tgme_widget_message_link_preview" href="https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-renewed-mass-exploitation-campaign-targeting-oracle-peoplesoft?e=48754805">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">Google Cloud Blog</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/iuEOxmVoBke6g-AP4zJoXDlnz7JtvYHahxrcirDhfvd5od6eLNnl-3oZL-A_PcOGoA9RSYB_y-jHniNorK8ipihaXXqke0_0fFAENqS3TP0B__q-xOg4cF_Fk6EdDsotNG9ipLmEKm7AcYfknwd67h3qYnYaHz6ZZosZ6-H1MBYeNv5W2W6nXYA_boBVzXW6-anQAZCm11Cu_vlG3UzVAu3SSAFyEBJ6Cvhg-W8pDuj-ZK4JtKdIrks0QwjwoFEYoxkHktBtyK_6IFZtxWr6EZPWB-s4HwNDYmm4O6noQhOWU7L2TbM2G76vU5j_GShVYDKpK4xEzfgRkCawD4Lg-w.jpg');padding-top:49.125%"></i>
+  <div class="link_preview_title" dir="auto">ShinyHunters Renewed Mass Exploitation Campaign Targeting Oracle PeopleSoft | Google Cloud Blog</div>
+  <div class="link_preview_description" dir="auto">This follow-up report details how UNC6240 (ShinyHunters) is mass-exploiting Oracle PeopleSoft (CVE-2026-35273) by bypassing WAF rules via a single URL-encoded character, providing full analysis of the attack pipeline, observed post-exploitation activity,…</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.33K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8653"><time datetime="2026-09-28T14:37:33+00:00" class="time">14:37</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8654" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1NCwidCI6MTc5MDkyMDUyOCwiaCI6ImM4NGU5MWFjOWVkYmQyYjk4OSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Kiteworks</b> (ранее <b>Accellion</b>), поставщик решений для безопасного обмена данными, в минувшие выходные призвала своих клиентов отключить серверы в ответ на достоверную информацию об угрозах, полученную от федеральных разведывательных органов (&#33;).<br/><br/>Компания при этом заявляет, что эта мера была принята в качестве предосторожности и что у нее нет доказательств взлома систем <b>Kiteworks</b> или систем клиентов.<br/><br/>В сообщении для клиентов, разосланном в пятницу, компания рекомендовала провести «девятичасовое превентивное отключение» локальных и размещенных клиентами экземпляров, отметив, что хакеры могут использовать 0-day в ее продуктах.<br/><br/>Позже в воскресенье компания <a href="https://www.kiteworks.com/company/press-releases/kiteworks-precautionary-shutdown-advisory/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>объявила</u></a> об отмене своей предыдущей рекомендации по отключению для всех клиентов и о том, что они могут снова подключить свои системы к сети.<br/><br/>В заявлении <b>Kiteworks</b> не уточнялось, в чем именно заключалась угроза, однако компания сообщила в электронных письмах своим клиентам, что причиной отключения стал серьезный уязвимый компонент в ее продукте для безопасного сбора данных <b>Advanced Forms.</b><br/><br/>Причем <b>Advanced Forms</b> включена менее чем у 1% наших клиентов, то есть менее чем в 50 организациях, и уязвимость затрагивает только этот продукт. Все остальные продукты, включая <b>DPE</b>, средства для совместной работы с файлами, передачу файлов, шифрование электронной почты, API и MFT, <a href="https://www.reddit.com/r/sysadmin/comments/1wq0m1u/psa_kiteworks_coordinated_shutdown/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>не затронуты</u></a>.<br/><br/>Компания также заявила, что у нее нет доказательств того, что уязвимость была использована злоумышленниками, а сама она уже на связи с «отраслевыми партнерами, включая <b>Mandiant</b>, для обмена информацией об угрозе».</div><a class="tgme_widget_message_link_preview" href="https://kiteworks.com/company/press-releases/kiteworks-precautionary-shutdown-advisory">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">Kiteworks</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/Eb6uxMDwCXmEyWHBcRJRdaAH6M3jznLBIWLvy9Lw4faDRu_8aaL8LbsQBXXl2HZwY0-eINcHaqJ9Tr46PVy0E3xFnFxz3NlJGdYjBqfwqQ6N3UyKEew_oWp1ZklqnyMBTVvRlWOEcRhj1gZ43ZcCr3YfDfXSusAw6ki80jmAurC3zI5J8WSFHNZYsAB-apg-VftCccbboB7xPREhtu1vfSHWhU-qoTp5FEjMT1vzVSHgQZdJG6JoqPRYkLVG-MnMwtsFbQVu0Oe_q7kWnBG-yXqun6WPwB9jBKa9dkIof9AKNXTBmTbD0L240S6cW11-JtBmRuMQE1Gpj2lncv0iQw.jpg');padding-top:66.666666666667%"></i>
+  <div class="link_preview_title" dir="auto">Kiteworks Issues Precautionary Shutdown Advisory for Customers Following Credible Threat Intelligence From Federal Intelligence…</div>
+  <div class="link_preview_description" dir="auto">Kiteworks issues a precautionary shutdown advisory for all customers after credible threat intelligence from federal authorities. No indication of compromise.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.62K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8654"><time datetime="2026-09-28T17:10:34+00:00" class="time">17:10</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8655" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1NSwidCI6MTc5MDkyMDUyOCwiaCI6IjdmNzAyZjYzZDUwNTA3YWNjMCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Intel</b> <a href="https://www.tweaktown.com/news/113651/intel-kills-its-bug-bounty-program-that-paid-up-to-dollars100000-for-flagging-security-vulnerabilities/index.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>отменила</u></a> финансовые вознаграждения в рамках своей программы поиска уязвимостей, ранее обещавшую до 100 000 долл. за каждое сообщение об уязвимости после его подтверждения.<br/><br/>Компания обновила <a href="https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram/detail" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>страницу</u></a> своей BugBounty на платформе <b>Intigriti</b>, убрав информацию о денежных выплатах и добавив отметку «вознаграждение не предусмотрено».<br/><br/>Последнее <a href="https://web.archive.org/web/20260913141155/https://app.intigriti.com/programs/intel/intel/detail" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>обновление</u></a> страницы с наградами датируется 13 сентября. Сама <b>Intel</b> отказалась комментировать причины отмены.<br/><br/>BugBounty <b>Intel </b>работала уже более десяти лет, при этом после раскрытия <b>Specter и Meltdown </b>в 2017 году, показавших, насколько уязвимы и небезопасны ее процессоры, размер вознаграждения значительно увеличился, стимулируя новые не менее значимые исследования.<br/><br/>Конечно, доподлинно неизвестно, сколько раз <b>Intel</b> присудила максимальное вознаграждение, но всё же производила выплаты. Однако дело даже не в этом.<br/><br/>Обновленную альтруистическую BugBounty от <b>Intel </b>следует рассматривать в более широком контексте.<br/><br/>За последний год ряд технологических гигантов начали <a href="https://www.vulncheck.com/blog/ai-assisted-vulnerability-discovery" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>рапортовать</u></a> о массах обнаруженных с помощью <b>ИИ</b> ошибок, которые буквально обрушились на их программы BugBounty.<br/><br/>Если один из них отнимали время и ресурсы у специалистов, то другие попросту истощали бюджеты программ BugBounty постоянным потоком сообщений об ошибках.<br/><br/>До недавнего времени ведущие специалисты из ИБ-индустрии предупреждали о надвигающемся апокалипсисе, связанном с уязвимостями и <b>ИИ</b>, который может привести к тому, что многие из них не будут устраняться вовремя.<br/><br/>Однако теперь еще одним побочным эффектом этого тренда можно считать - сокращение или почти полное исчезновение хорошо оплачиваемых BugBounty.<br/><br/>Так что в ближайшем будущем растущее число репортов об ошибках приведет к откату на два десятилетия назад, когда все сообщения об ошибках были бесплатными.<br/><br/>Что касается профессии «багхантера», то она, конечно же, не исчезнет, но, к сожалению для многих, она уже не будет такой прибыльной, как раньше.</div><a class="tgme_widget_message_link_preview" href="https://tweaktown.com/news/113651/intel-kills-its-bug-bounty-program-that-paid-up-to-dollars100000-for-flagging-security-vulnerabilities/index.html">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">TweakTown</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/sX4eNcNAA3IyUfcxZ0-x77SWCJa8PWJN7gcdsQiRxDsgggJ0Lel_-t4iCrXwRUVYbUf_7ojvW1axng0Okp3zzmN7R3vghmcx2aJ8jnfd5hJgXeZ66GeJfN-0CCoLJYrYfv3e5wzd5awfo63EBaTrz93leRM3zB-S69QNuw5OW2Q712ZLzcxRfbjMMPrhMdFyBST7EprQG7Z4jdSPmAjX_KMof1FRl1SG_JpfwzXJHzB6TqT2R8D9cSEl7v1B12uVFTFX3oe8SnjyvM02535RkWdZDgC1uIA8q5nrJjKgHh_xacQ4qB0Ncbsqi7vu_4toxKcqrpSGesz95Htqt3I6VA.jpg');padding-top:56.25%"></i>
+  <div class="link_preview_title" dir="auto">Intel kills its bug bounty program that paid up to &#036;100,000 for flagging security vulnerabilities</div>
+  <div class="link_preview_description" dir="auto">Intel has replaced its paid bug bounty with a no-reward disclosure program as AI floods security teams with automated vulnerability reports.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8655"><time datetime="2026-09-28T18:19:57+00:00" class="time">18:19</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8656" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1NiwidCI6MTc5MDkyMDUyOCwiaCI6IjhkNzVkYjcwMWYwZjQ4MTZmZCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Apple</b> <a href="https://support.apple.com/en-us/149226" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>выпустила</u></a> обновления для устранения 0-day, используемой в «чрезвычайно сложных» таргетированных атаках на устройства <b>iOS</b>.<br/><br/><u>CVE-2026-20700</u> связана с обнаруженной компанией <b>Meta Product Security</b> (признана экстремистской в <b>России</b>) проблемой записи за пределы допустимого диапазона в <b>CoreGraphics</b> - фреймворке, используемом для двухмерной векторной графики, рендеринга изображений и рисования текста на <b>iOS, macOS, iPadOS, watchOS и tvOS</b>.<br/><br/>Успешная эксплуатация уязвимостей записи за пределы выделенного буфера памяти позволяет злоумышленникам вызвать сбой в работе программы, повредить данные или, в худшем случае, получить возможность RCE путем записи данных за пределы выделенного буфера памяти.<br/><br/><b>Apple</b> отдельно отметила, что эта уязвимость, вероятность, использована в чрезвычайно сложной атаке против конкретных целевых лиц на версиях <b>iOS</b>, предшествующих <b>iOS 27.</b><br/><br/>Обработка специально созданного файла может привести к выполнению произвольного кода. Проблема записи за пределы допустимого диапазона была решена за счет улучшения проверки границ.<br/><br/>Среди затронутых нулем устройств: <b>iPhone 11, iPad Pro</b> 12,9 дюйма 3-го поколения, <b>iPad Pro 11</b> дюймов 1-го поколения, <b>iPad Air </b>3-го поколения, <b>iPad </b>8-го поколения, <b>iPad mini</b> 5-го поколения (и все более поздние модели), а также <b>Mac</b> под управлением <b>macOS Sequoia </b>15.8.1 и <b>Tahoe</b> 26.7.1.<br/><br/><b>Apple</b> устранила проблему, улучшив проверку границ для предотвращения эксплуатации уязвимостей в <a href="https://support.apple.com/en-us/149226" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>iOS 26.7.1 и iPadOS 26.7.1</u></a>, <a href="https://support.apple.com/en-us/149228" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>macOS Tahoe 26.7.1</u></a> и <a href="https://support.apple.com/en-us/149229" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>macOS Sequoia 15.8.1</u></a>.<br/><br/>Уязвимость, по всей видимости, используется исключительно в целевых атаках, тем не менее настоятельно рекомендуется незамедлительно установить последние обновления.<br/><br/>В совокупности с этой уязвимостью <b>Apple</b> устранила две 0-day, эксплуатируемые злоумышленниками с начала года. Другая уязвимость, связанная с произвольным выполнением кода в <b>dyld</b>, отслеживаемая как CVE-2026-20700 и также используемая в таргетированных атаках, была исправлена еще в феврале.<br/><br/>В прошлом году на счету <b>Apple</b> было сеть таких уязвимостей нулевого дня, включая CVE-2025-24085, CVE-2025-24200, CVE-2025-24201, CVE-2025-31200, CVE-2025-31201, CVE-2025-43529 и CVE-2025-14174. Но, как говорится, еще не вечер. Будем посмотреть.</div><a class="tgme_widget_message_link_preview" href="https://support.apple.com/en-us/149226">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">Apple Support</div>
+  
+  <div class="link_preview_title" dir="auto">About the security content of iOS 26.7.1 and iPadOS 26.7.1 - Apple Support</div>
+  <div class="link_preview_description" dir="auto">This document describes the security content of iOS 26.7.1 and iPadOS 26.7.1.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.48K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8656"><time datetime="2026-09-29T11:43:38+00:00" class="time">11:43</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8657" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1NywidCI6MTc5MDkyMDUyOCwiaCI6IjIxMDZlOGUyNDAzOTg4MDNkNyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Полиция штата <b>Амстердам (Politie Landelijke Opsporing en Interventies</b>) <a href="https://x.com/Pol_Ops_Int/status/2104607979559342174" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>накрыла</u></a> 24-летнего жителя Амстердама в рамках расследования деятельности хакерской группы <b>ShinyHunters</b>, который в ближайшее время предстанет перед окружным судом <b>Роттердама</b>.<br/><br/>По данным <a href="https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>KrebsOnSecurity</u></a> и <a href="https://databreaches.net/2026/09/28/still-on-probation-from-previous-arrest-for-hacking-and-extortion-dutch-national-is-arrested-again/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>DataBreaches</u></a>, подозреваемым является <b>Пепейн ван дер Стап</b>, голландский хакер, ранее известный в сети под псевдонимом <b>Umbreon</b>.<br/><br/>В январе 2023 года <b>Ван дер Стап</b> обвинялся во взломе и шантаже более десятка компаний в <b>Нидерландах</b> и по всему миру. Впоследствии он признал себя виновным и был приговорен к четырем годам тюремного заключения, из которых 1 - условно и еще три с испытательным сроком.<br/><br/>Как передает <b>DataBreaches, Ван дер Стап</b> был арестован снова в этом году 15 сентября, когда сотрудники <b>подразделения тактической полиции Нидерландов </b>провели <a href="https://www.at5.nl/artikelen/239945/speciale-eenheid-rivierenbuurt-amsterdam" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>обыск</u></a> в доме в <b>Амстердаме</b>, где он жил со своей матерью, по результатам которого изъяли электронные устройства.<br/><br/>Как сообщает <b>KrebsOnSecurity</b>, источники, знакомые с ходом расследования, подтвердили, что власти изучают возможную связь между <b>Ван дер Стапом и ShinyHunters.</b><br/><br/>В отчете также утверждается, что псевдоним <b>Umbreon</b>, ранее использовавшийся <b>Ван дер Стапом</b>, может связать его с <b>ShinyHunters</b>, которые недавно использовали того же персонажа <b>Pokémon</b> в рамках кампании по краже данных <b>ФБР США</b> и взлома сайта банды вымогателей <b>Clop</b>.<br/><br/>При этом установлено, что <b>Ван дер Стап</b> использовал псевдоним <b>Umbreon </b>и изображения покемонов на <b>BreachForums</b> ещё в 2021 году.<br/><br/>Однако тот же персонаж <b>Umbreon</b> появился годом ранее, в <a href="https://web.archive.org/web/20200829145057/http://hackforums.net/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>2020 году</u></a>, в ходе взлома <b>HackForums</b>, за год до того, как <b>Ван дер Стап</b> создал учетную запись <b>Umbreon</b>.<br/><br/>Ранее нидерландская полиция <a href="https://www.politie.nl/nieuws/2026/september/7/11-politie-deelt-stem-van-verdachte-in-onderzoek-naar-hack-odido.html" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>обнародовала</u></a> запись с голосом нидерландскоязычного мужчины, подозреваемого в причастности к взлому <b>Odido</b>.<br/><br/>Полиция сообщила, что мужчина позвонил в службу поддержки <b>Odido</b>, представившись сотрудником IT-отдела компании, и обманом заставил сотрудника ввести учетные данные и проверочный код на фейковый странице авторизации, что открыло злоумышленникам доступ к внутренним системам.<br/><br/><b>DataBreaches</b>, которая, по её собственным словам, неоднократно общалась с <b>Ван дер Стапом</b>, отметила, что голос на записи не похож на его. Кроме того, близкий друг <b>Ван дер Стапа</b> пришёл к тому же выводу.<br/><br/>В свою очередь, касаясь ареста <b>Ван дер Стапа</b>, представители <b>ShinyHunters</b> опровергают любую связь с ним: «Этот человек никак с нами не связан. Честно говоря, мы смеемся».<br/><br/>Так или иначе, совпадения голоса или иные значимые факты могут быть гарантированно получены силовиками уже проверенным методом терморектального криптоанализа, для проведения которого предусмотрительные полицейские подложились всеми бумагами и согласованиями.<br/><br/>Очевидно, похлопотали американские коллеги после своих недавних «контактов» с <b>ShinyHunters.</b> В общем, будем посмотреть.</div><a class="tgme_widget_message_link_preview" href="https://x.com/Pol_Ops_Int/status/2104607979559342174">
+  <i class="link_preview_right_image" style="background-image:url('https://cdn4.telesco.pe/file/OCl4O1zEPOLxwSRKa8SBEpFBEglLaX2XzURaVIKWvE9YPWdFDunA2__RXiJWZue3J9rHiyWUk6J_Jw9BUKaBUnLUnoAYGzOJ4tlMmjiOobMMYlgB_1wwfJxbMRjX41kNYXD2UU0fCL-d5kjlh1_6WzL5gbB9ca9F_CvTs31eqJlbzTzJiC2XaqGEJImL17g_FE0hOZUojIV5ulzzFypkreJyE5RQ5pw9EF_hYgOChOPYL252HKASKYElx7sj_qi89g_ZKl33saSnUP1E9S9gLLtdrHIdNiKZAnhplBpNTAHS84WbxgTUJbzFCheddUAJVFprrHosAFcSi8JWQIlL2g.jpg')"></i>
+  <div class="link_preview_site_name accent_color" dir="auto">X (formerly Twitter)</div>
+  
+  <div class="link_preview_title" dir="auto">Politie Landelijke Opsporing en Interventies (@Pol_Ops_Int) on X</div>
+  <div class="link_preview_description" dir="auto">Het klopt dat er deze maand een 24-jarige man uit Amsterdam is aangehouden in een onderzoek naar de hackersgroep ShinyHunters. Op dinsdag 29 september staat de man voor de raadkamer van de rechtba…</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.11K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8657"><time datetime="2026-09-29T13:44:00+00:00" class="time">13:44</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8658" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1OCwidCI6MTc5MDkyMDUyOCwiaCI6IjIxNDI2NDRiNTlmM2Q1NGVhMCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Два сторонних <b>GitHub Actions</b>, ранее скомпрометированные в ходе кампании <b>Mini Shai-Hulud</b>, были повторно активированы их разработчиком и оставались доступными более недели, несмотря на то, что по-прежнему указывали на вредоносный код.<br/><br/>После взлома 18 мая команда безопасности <b>GitHub</b> удалила папки <b>actions-cool/issues-helper </b>и <b>actions-cool/maintain-one-comment, </b>предотвратив загрузку вредоносного ПО из любых последующих рабочих процессов.<br/><br/>По данным исследователей <b>Socket</b>, с 16 по 25 сентября оба действия снова активировались с теми же тегами релиза, в результате чего рабочие процессы, ссылающиеся на эти действия, загружали и выполняли старую полезную нагрузку.<br/><br/>Тогда в мае атака <b>Mini Shai-Hulud</b> на цепочку поставок затронула 323 пакета и 639 версий пакетов в индексе <b>Node Package Manager (npm),</b> заразив их вредоносным ПО, нацеленным на токены разработчиков, учетные данные и секреты CI/CD.<br/><br/>Исследователи <b>Socket</b> <a href="https://socket.dev/blog/mini-shai-hulud-actions" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>обнаружили</u></a>, что в прошлую среду теги релизов <b>actions-cool/issues-helper и actions-cool/maintain-one-comment </b>привели к коммиту, содержащему обфусцированную полезную нагрузку внутри файла index.js.<br/><br/>Оба репозитория по-прежнему указывают на вредоносный контент, появившийся 18 мая, поэтому любой рабочий процесс, который ссылается на любое из этих действий по тегу версии, возобновлял загрузку и выполнение полезной нагрузки при следующем запуске.<br/><br/>Неясно, почему эти репозитории были повторно включены без предварительной надлежащей очистки. По данным <b>Socket</b>, в графе зависимостей <b>GitHub</b> указано около 15 000 репозиториев, зависящих от issues-helper, хотя это не означает, что все они были скомпрометированы.<br/><br/>Исследователи отмечают, что им пока не удалось установить, сколько зависимых элементов ссылаются на то или иное действие с помощью изменяемого тега, а не закрепленного коммита.<br/><br/>Однако они пояснили, что затронутые действия - это те, которые выполняются почти ежедневно, поскольку они направлены на решение текущих проблем.<br/><br/>25 сентября <b>Socket</b> установила, что оба действия снова были отключены на <b>GitHub</b>, в результате чего рабочие процессы, которые ссылаются на них, завершались с ошибкой вместо выполнения полезной нагрузки.<br/><br/><b>Socket</b> рекомендует найти ссылки на оба действия, удалить их или закрепить проверенный чистый коммит, просмотреть запуски с 16 сентября и ротировать секреты, доступные для рабочих процессов, которые запускали затронутый тег.<br/><br/>Разработчикам, которых потенциально может затронуть данная проблема, следует проверить наличие ссылок на оба действия и удалить их или закрепить проверенный чистый коммит.</div><a class="tgme_widget_message_link_preview" href="https://socket.dev/blog/mini-shai-hulud-actions">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">socket.dev</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/ul7eSsX4HoZ9Gc9xRDj3lhdq4n5ggrxFFVBYyDTQgEihlfmGDbuSCOiu7mov0fslEVVCQF0WiLOr9juOXyJfKo0G6JGEJz1DOcSl8L6WxpJHcc60HnggBqs1kdhXfkEbGoVK-kk5C9pOytKPniKWzVIHnd8Yu4p-Ko3DZv5NxHtFY8GCJTiQSmrvfMd_PbnrLghda6yPHCCBZSSjyiCceMsxwOmZlbcx8uLsrfEKWq6oE_Hkv2gCIrDATMcOyAHbARwwbUIh9FNXnRgt1LJlspkdwEa4R_NOUzi4e_55HG6eOJUHFuc5lWrryNhQeZqnnmwVc4QvPpy7z5bqfHC0mA.jpg');padding-top:56.25%"></i>
+  <div class="link_preview_title" dir="auto">Re-Enabled GitHub Actions Expose Thousands of Repositories to Mini Shai-Hulud</div>
+  <div class="link_preview_description" dir="auto">Two compromised GitHub Actions were re-enabled with malicious tags intact, exposing thousands of downstream repositories to Mini Shai-Hulud.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.05K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8658"><time datetime="2026-09-29T15:45:10+00:00" class="time">15:45</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8659" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY1OSwidCI6MTc5MDkyMDUyOCwiaCI6ImQ4NGY1NWViZjVhOGJiZWJhNSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Исследователи <b>F6</b> <a href="https://habr.com/ru/companies/F6/articles/1087974/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>сообщают</u></a> об обнаружении новой активности <b>Mimbrob</b>, нацеленной на&nbsp;российский ВПК и IT‑компании.<br/><br/>В апреле 2026 года <b>F6 </b>обнаружили волну вредоносной активности, однако достаточных оснований для&nbsp;того, чтобы атрибутировать эту активность какой‑либо из ранее известных киберпреступных группировок, не&nbsp;было. <br/><br/>Атакующие рассылали фишинговые письма с архивами, нацеленные на организации в авиакосмической промышленности. Судя по выбору целей и качеству составления фишинговых писем, вероятная цель атакующих – шпионаж.<br/><br/>Содержимое архивов включало в&nbsp;себя легитимный исполняемый файл (чаще всего <b>Яндекс Браузера</b>) и вредоносную DLL, загружаемую с&nbsp;помощью техники <b>DLL Sideloading.</b><br/><br/>С2-серверы атакующих мимикрировали под технические домены <b>Yandex</b>, а адреса отправителей писем - под&nbsp;реальные организации. <br/><br/>Специалисты присвоили группе название <b>Mimbrob</b>&nbsp;- mim&nbsp;по&nbsp;мимикрии в&nbsp;доменах и файлах,&nbsp;br&nbsp;- от использования браузеров в атаках, rob&nbsp;- от&nbsp;найденного на скомпрометированном домене логотипа.<br/><br/>Атакующие впервые проявили активность в апреле 2026&nbsp;года, параллельно распространяя через фишинговые письма вредоносное ПО на&nbsp;<b>Go</b> и загрузчик <b>FBULoader</b> (аббревиатура от <b>Fake Browser Update Loader</b> – фальшивый загрузчик обновления браузера).<br/><br/>Затем в&nbsp;мае злоумышленники через свой сайт распространяли загрузчик <b>FBULoader </b>под&nbsp;видом приложения <b>Dronner </b>для отслеживания дронов типа «<b>Баба‑яга</b>».<br/><br/>С&nbsp;начала сентября группировка возобновила активность и стала распространять фишинговые письма на&nbsp;тему судебных разбирательств, нацеливаясь на IT‑компании.<br/><br/>Вместе с тем, поскольку финальная нагрузка в&nbsp;ходе исследования не&nbsp;была получена, более точные выводы о&nbsp;мотивации остаются в&nbsp;области предположений.<br/><br/>Технические подробности, включая сетевую инфраструктуру атакующих, IOCs - в <a href="https://www.f6.ru/blog/mimbrob/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>отчете</u></a> на&nbsp;сайте <b>F6</b>.</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.2K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8659"><time datetime="2026-09-29T16:43:10+00:00" class="time">16:43</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8660" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2MCwidCI6MTc5MDkyMDUyOCwiaCI6ImE0NDFjZmJkZDhiYjFhMzFlNyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Новый вариант атаки <b>Spectre v2</b> - <b>Branch Target Reuse (BTR</b>), <a href="https://www.vusec.net/projects/btr/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>позволяет</u></a> восстанавливать хэши паролей root с компьютеров <b>Intel</b> под управлением <b>Linux</b> всего за несколько минут.<br/><br/>Атака <b>BTR</b> использует устаревшую информацию в алгоритме предсказания ветвлений процессора после того, как JIT-компилятор повторно использует память для нового кода.<br/><br/>Манипулируя этой остаточной информацией, злоумышленник может обмануть процессор, заставив его временно выполнить неверные инструкции, и потенциально раскрыть конфиденциальные данные.<br/><br/>Исследователи <b>VUsec</b> (группа системной и сетевой безопасности <b>Амстердамского университета VU</b>) и <b>Высшей школы Сант-Анна </b>разработали новую атаку и оценили ее эффективность в отношении движка <b>JavaScript SpiderMonkey в Firefox, GraalVM и cBPF ядра Linux.</b><br/><br/>Атака остается важным открытием, учитывая, что с 2018 года в этой области считалось, что подобные атаки нецелесообразны из-за того, что в качестве основы для динамической генерации кода в стандартных JIT-системах используется самомодифицирующийся код (<b>SMC</b>).<br/><br/><b>BTR</b> демонстрирует обратное, показывая, что атаки с использованием временного выполнения на основе <b>SMC</b> являются практичными в реальных условиях и могут быть использованы для утечки хеша пароля root.<br/><br/>Исследователи уведомили затронутых поставщиков, проблемам были присвоены CVE-2026-64507 и CVE-2026-64508. Исправления уже были интегрированы в ядро <b>Linux</b>.<br/><br/>В своем отчете исследователи продемонстрировали два сквозных эксплойта для <b>Linux cBPF</b>: один при конфигурации по умолчанию и один с включенной опцией постоянного ослепляющего усиления защиты.<br/><br/>В последнем случае эксплойт адаптирован для кодирования инструкций, контролируемых злоумышленником, в смещениях перехода, и при этом хеш все равно восстанавливается в течение пяти минут.<br/><br/>Исследователи также изучили <b>SpiderMonkey от Firefox и GraalVM от Oracle</b> в качестве отдельных JIT-движков для выявления уязвимостей <b>BTR</b>.<br/><br/>В <b>SpiderMonkey</b> демонстрационный PoC <b>VUSec</b> показал, что устаревшие прогнозы сохраняются при повторном использовании кода, но не при полной атаке на браузер.<br/><br/>В <b>GraalVM</b> исследователи обнаружили способ спекулятивного пропуска проверки в песочнице, но активность движка обнулила прогнозы до того, как они смогли завершить атаку в своих экспериментах.<br/><br/>Что касается реальных условий эксплуатации, исследователи отмечают, что большинство современного оборудования уязвимо для этой новой атаки <b>BTR</b>.<br/><br/>Косвенное предсказание ветвлений является неотъемлемой частью современных процессоров, и <b>BTR</b> использует рассинхронизацию между предсказателем ветвлений и фактическим состоянием кода.<br/><br/>Ни один из современных процессоров не имеет механизма синхронизации этих двух данных, поэтому, пока производители не добавят такой механизм, процессор будет уязвим. Ученые подтвердили это поведение на каждом протестированном процессоре, включая <b>Intel, AMD и Arm.</b><br/><br/>Пользователям рекомендуется установить обновления ОС и микропрограммного обеспечения, а пользователям <b>Linux</b> - обновить ядро до последней версии.</div><a class="tgme_widget_message_link_preview" href="https://vusec.net/projects/btr">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">vusec</div>
+  
+  <div class="link_preview_title" dir="auto">Branch Target Reuse: Spectre-v2 Attacks in JIT Engines</div>
+  <div class="link_preview_description" dir="auto">Branch Target Reuse (BTR): a new Spectre-v2 attack that exploits stale branch predictions in JIT engines. CCS 2026.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.25K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8660"><time datetime="2026-09-29T18:10:03+00:00" class="time">18:10</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8661" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2MSwidCI6MTc5MDkyMDUyOCwiaCI6IjA0MWUyZmUyNzZhZDRkYTA0MyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>ФБР США</b> обратилось к членам <b>ShinyHunters</b>, призвав их сдаться после после того, как партнеры бюро из <b>Национальной полиции Нидерландов</b> арестовали одного из предполагаемых лидеров группы.<br/><br/>Голландская полиция сообщила, что подозреваемый - 24-летний мужчина из <b>Амстердама</b>, был арестован 15 сентября. По сообщению словаков, его подозревают в участии в деятельности <b>ShinyHunters</b> и в принадлежности к преступной организации.<br/><br/>На его ноутбуке было обнаружено большое количество информации, в том числе улики, связанные с подготовкой к совершению двух убийств за границей. Причем артефакты указывают на то, что именно подозреваемый отдал приказ об этом.<br/><br/>Во вторник окружной суд <b>Роттердама</b> постановил оставить подозреваемого под стражей до суда как минимум еще на 90 дней, при этом полиция заявила, что дальнейшие аресты не исключены.<br/><br/><b>ФБР США</b> утверждает, что <b>ShinyHunters</b> и ее предполагаемые сообщники с прошлого года взломали более 140 организаций и получили не менее 70 млн. долл. в виде выплат «выкупа».<br/><br/>Хакеры достаточно часто атакуют корпоративные учетные записи <b>SSO</b>, сторонних поставщиков и облачные SaaS-платформы, включая <b>Salesforce и Snowflake</b>, для кражи конфиденциальных данных, а затем шантажа жертв угрозами их публикации.<br/><br/>Все наша версия про паяльник оказалась рабочей, реакция ФБР на масштабный инцидент, связанный с кражей ShinyHunters данных бюро через нуль в <b>Oracle PeopleSoft</b>, оказалась более чем оперативной.<br/><br/>Напомним, <b>ShinyHunters</b> публично заявили о краже от двух до трех ТБ данных из систем <b>ФБР</b>, включая информацию, связанную с ее внутренними корпоративными системами.<br/><br/>Впоследствии банда вымогателей предоставила в СМИ образцы примерно 5000 единиц данных на сотрудников <b>ФБР</b> в подтверждение своих заявлений. Причем, среди них якобы оказались данные об участниках секретной группы бюро, занимающейся хакерскими операциями.<br/><br/>Кроме того, как <a href="https://www.reuters.com/world/hacked-fbi-data-has-sensitive-information-about-employees-intelligence-roles-2026-09-23/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>сообщила</u></a> <b>Reuters</b>, что некоторые из разоблаченных сотрудников были задействованы в расследованиях, касающихся <b>Китая и России</b>.<br/><br/>Несмотря на конфиденциальность украденной информации, <b>ShinyHunters</b> отметила, что атака на <b>ФБР</b> не была мотивирована финансовыми соображениями, попыткой вымогательства или целью публикации данных.<br/><br/>Злоумышленники утверждают, что провернули кейс в ответ на заявление <b>ФБР</b> в отношении <b>ShinyHunters</b>, в которой упоминались, по их мнению, не соответствующие действительности, некоторые тактические приемы вымогательства. В общем, задели репутацию группы.<br/><br/>Теперь же <b>ФБР</b> перешло к публичным нападкам на банду, выдав <a href="https://www.fbi.gov/video-repository/shinyhunters-arrested-092926.mp4/view" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>видеоролик</u></a> с обращением к оставшимся на свободе членам <b>ShinyHunters</b>, призывая их сдаться и не полагаться на «друзей», которые в любом случае их сдадут.<br/><br/>По всей видимости, теперь <b>ShinyHunters </b>предстоит вести переговоры уже на «DLS-ресурсах» <b>ФБР</b>, где в скором времени могут нарисоваться неуспевшие договориться со содействием члены банды.<br/><br/>Очевидно, что украденные 3ТБ могут стать вполне неплохими «выкупными». Будем следить.</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.14K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8661"><time datetime="2026-09-30T08:33:07+00:00" class="time">08:33</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8662" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2MiwidCI6MTc5MDkyMDUyOCwiaCI6ImY5YjRhM2ZmODIxZGEyMWRjZCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Mandiant</b> сообщает об эксплуатации 0-day, CVE-2026-88772, в <b>Citrix NetScaler</b>, связанной с развертыванием веб-оболочек и вредоносного ПО для туннелирования, получением root-доступа и кражей учетных данных.<br/><br/>Атаки стартовали как минимум с начала сентября и, как полагают исследователи, затронули организации в <b>Северной Америке и Европе</b> из правительственного, финансовоого, образовательного и юридического секторов.<br/><br/>Первые упоминания о начавшейся кампании впервые появились в выходные, когда среди клиентов начала циркулировать информация о двух зиродеях в <b>NetScaler</b> и необходимости отключения всех затронутых устройств.<br/><br/><b>WatchTowr</b> позже подтвердила сообщения о том, что в сети используются две 0-day для удаленного выполнения кода в <b>NetScaler</b>, а <b>Citrix</b> готовит патчи.<br/><br/>В воскресенье <b>Citrix</b> в конечном итоге <a href="https://support.citrix.com/support-home/kbsearch/article?articleNumber=CTX697096" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>раскрыла</u></a> подробности по CVE-2026-88771 и CVE-2026-88772, а некоторые исследователи назвали эти их <b>PitScaler</b>.<br/><br/><b>Citrix</b> подтвердила, что обе уязвимости были использованы в незащищенных развертываниях <b>NetScaler</b>, и выпустила обновления для их устранения.<br/><br/>CVE-2026-88771 - это RCE-уязвимость без аутентификации, затрагивающая все развертывания <b>NetScaler ADC и Gateway</b>, а CVE-2026-88772 - это уязвимость переполнения памяти, которая может привести к RCE или DoS при включенном <b>DTLS</b>.<br/><br/>24 сентября <b>GreyNoise</b> <a href="https://www.greynoise.io/blog/swarming-against-citrix-0-day-exploitation" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>зафиксировала</u></a> попытку использовать уязвимость <b>Citrix NetScaler Gateway</b>, за три дня до того, как <b>Citrix</b> публично сообщила об уязвимостях.<br/><br/>Атака была совершена с IP <a href="http://149.104.78.141/" target="_blank" rel="noopener">149.104.78.141</a> и была детектирована до того, как стали доступны средства обнаружения уязвимостей CVE.<br/><br/>По данным <b>GreyNoise</b>, злоумышленник попытался модифицировать систему /bin/sh, чтобы получить root-доступ к оболочке и установить защищенную паролем веб-оболочку <b>PHP</b> по адресу /var/netscaler/logon/LogonPoint/custom/.ctxs.receiver.<br/><br/>Он также предпринимал попытки внести изменения /etc/httpd.conf таким образом, чтобы запросы к файлам, которые выглядели как CSS-файлы, включая receiver.min.css, вместо этого открывали скрытую веб-оболочку <b>PHP</b>.<br/><br/>Компания пока не публикует полную версию эксплойта, но рекомендует проверить наличие ctxs.receiver файла, связанных с ном Alias  или AliasMatch записей в httpd.conf, изменений в правах доступа к /bin/sh и подключений с наблюдаемого IP источника.</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.72K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8662"><time datetime="2026-09-30T10:49:51+00:00" class="time">10:49</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8663" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2MywidCI6MTc5MDkyMDUyOCwiaCI6ImUxZDI2NDE5YjM1ZjBiYTU5NyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">В продолжение к предыдущему: в своем <a href="https://cloud.google.com/blog/topics/threat-intelligence/defending-against-active-exploitation-of-citrix-netscaler-adc-and-gateway-appliances?e=48754805" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>отчете</u></a> <b>Mandiant</b> приводит дополнительные подробности о том, как используется уязвимость CVE-2026-88772, подтверждая некоторые из тех же моделей атак, которые были обнаружены <b>GreyNoise</b>.<br/><br/><b>Mandiant</b> полагает, что эксплойты обходят аутентификацию и приводят к неожиданному завершению работы механизма обработки пакетов <b>NetScaler (NSPPE</b>), предоставляя злоумышленникам доступ с правами root.<br/><br/>Хотя у G<b>oogle Threat Intelligence Group</b> нет кода эксплойта, анализ телеметрии предполагает, что передача специально искаженных или фрагментированных заголовков записей вызывает повреждение границ памяти кучи в пакетном движке, перенаправляя поток управления на выполнение произвольного шелл-кода с правами root на базовой платформе <b>FreeBSD.</b><br/><br/>В <b>Google</b> наблюдалась аналогичная активность после взлома, включая установку злоумышленниками веб-оболочек <b>PHP</b> и изменение конфигурации веб-сервера <b>NetScaler</b> таким образом, чтобы файлы с расширениями, отличными от исполняемых, обрабатывались как <b>PHP</b>.<br/><br/>По данным <b>Mandiant</b>, в одном из инцидентов злоумышленники изменили файл /etc/httpd.conf таким образом, чтобы .deb файлы выполнялись как <b>PHP</b>, что позволило использовать веб-оболочки из каталогов, обычно содержащих клиентское программное обеспечение <b>NetScaler</b>.<br/><br/>В других атаках злоумышленник использовал .sig файлы и модифицировал конфигурацию веб-сервера таким образом, чтобы запросы к .ico изображениям /vpn/media/ перенаправлялись на вредоносные PHP-файлы.<br/><br/><b>Google</b> утверждает, что это позволяло вредоносным запросам веб-оболочки выглядеть как запросы на файлы изображений или <b>CSS</b>, одновременно выполняя команды злоумышленника через функции <b>PHP</b> shell_exec() или eval().<br/><br/>Некоторые из веб-оболочек возвращали фейковые HTTP-ответы 404 при выполнении команд, что еще больше маскировало вредоносную деятельность.<br/><br/><b>Mandiant</b> заметила, что злоумышленники использовали два ранее не описанных семейства вредоносных ПО, отслеживаемых как<b> WHIPSHOT и SLAPSHOT.</b><br/><br/><b>WHIPSHOT</b> - это веб-оболочка на <b>PHP</b>, замаскированная под пакет <b>Debian</b> и хранящаяся в каталоге скриптов <b>NetScaler VPN.</b><br/><br/>Она действует как HTTP-прокси для <b>SLAPSHOT</b>, извлекая закодированные в <b>Base64</b> данные из заголовков HTTP-запросов и пересылая их туннелирующей вредоносной программе, работающей на скомпрометированном устройстве.<br/><br/><b>WHIPSHOT</b> также проверяет, запущен ли <b>SLAPSHOT</b>, и может ли он извлекать и запускать встроенные полезные нагрузки <b>Python</b> в фоновом режиме.<br/><br/><b>SLAPSHOT</b> представляет собой инструмент для туннелирования <b>TCP</b> на основе <b>Python</b>, который соединяет скомпрометированное устройство <b>NetScaler</b> с внутренними устройствами, позволяя злоумышленникам распространяться дальше по сети.<br/><br/>Вредоносная ПО принимает команды от <b>WHIPSHOT</b> и способна устанавливать соединения с внутренними хостами, отправлять и получать данные по этим соединениям, а также закрывать сессии по завершении и может самопроизвольно завершать свою работу<br/><br/>Хотя первоначальная эксплуатация предоставляет права root, команды, выполняемые веб-оболочками, обычно выполняются под учетной записью с более низкими привилегиями, под которой работают веб-серверы <b>NetScaler</b>.<br/><br/>По данным <b>Google</b>, для сохранения доступа с правами root злоумышленники изменили права доступа к каталогу /bin/sh таким образом, чтобы команды выполнялись с повышенными привилегиями.<br/><br/>Злоумышленник также перезагружал устройства <b>NetScaler</b> или перезапускал веб-сервер, чтобы применить изменения конфигурации.<br/><br/>Mandiant рекомендует специалистам в первую очередь установить последние обновления для <b>Citrix</b> и проверить устройства <b>NetScaler</b> на наличие признаков компрометации.<br/><br/>К потенциальным индикаторам относятся несанкционированные обработчики <b>PHP</b> или псевдонимы в httpd.conf, подозрительные файлы .deb или .sig, содержащие код <b>PHP</b>, необычные ответы HTTP 404, неожиданные сбои <b>NSPPE</b>, а также наличие файлов /tmp/.uxdport или /tmp/.uxdlock, связанных со SLAPSHOT.</div><a class="tgme_widget_message_link_preview" href="https://cloud.google.com/blog/topics/threat-intelligence/defending-against-active-exploitation-of-citrix-netscaler-adc-and-gateway-appliances?e=48754805">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">Google Cloud Blog</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/cF-qbsvRUpVxNXsxs7YWDLnw7YnTwSsTy9J4LvlOJZ1nsJyuoiA4qq-6yBs4QsyipKrxWy06XyQyt2XsfgcVqdjZkr2NJRchEhkZ96XLnadl82Xb-vJHRsgxpSj0HQp6N2jwk9evtgg-i9JDtWa-MdG7ULcs-47pF01tuSbuQ_HFpmslMxh0ga6x-UTTD3-YYKxfi3UIXc23jLv4Fl_j0K-9cSTXyZ4xVQAu8Li6IuCStpwEfL5ZxYvk8iL4MrB77_GJECxjY3iuLULbrkOIN5rGYS__J9if9sy_KlHh8GglHzIY-lsnAgT7jjNev8N3qevuBoEacGSRJbI0S5F9XQ.jpg');padding-top:49.125%"></i>
+  <div class="link_preview_title" dir="auto">Defending Against Active Exploitation of Citrix NetScaler ADC and Gateway Appliances | Google Cloud Blog</div>
+  <div class="link_preview_description" dir="auto">GTIG is tracking exploitation of critical vulnerabilities in Citrix NetScaler ADC NetScaler Gateway products.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.66K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8663"><time datetime="2026-09-30T10:51:25+00:00" class="time">10:51</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8664" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2NCwidCI6MTc5MDkyMDUyOCwiaCI6IjRiNWNjZmZjNzY3MWJhMDYxNSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Вслед за агентами <b>ФБР США</b> масштабная утечка накрыла более 3 млн. штатовских военнослужащих. <br/><br/>Как сообщается, утечка связана с работой <b>Центра данных по кадровым ресурсам Министерства обороны (DMDC)</b>, который ведет учет личных дел сотрудников <b>Министерства обороны.</b><br/><br/>При этом сам <b>DMDC</b> уже приступил к уведомлению сотрудников <b>Пентагона</b> о том, что их личная информация была раскрыта.&nbsp;Согласно уведомлению, неавторизованные пользователи имели доступ к одному из ее серверов для обмена файлами в течение примерно девяти месяцев.<br/><br/>В копии уведомительного <a href="https://www.reddit.com/r/AirForce/comments/1wmotdr/question_about_data_breach_letter/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>письма</u></a> от 18 сентября, опубликованного в интернете одним из получателей, говорится, что проблема была обнаружена в середине 16 июля 2026 года.<br/><br/>В системе обмена файлами <b>DMDC</b> была уязвимость, позволявшая неавторизованным пользователям получать доступ к файлам. <b>DMDC</b> незамедлительно обновила систему обмена файлами, устранив уязвимость, после чего система была восстановлена.<br/><br/>В письме не указано название затронутого продукта для обмена файлами и не описана уязвимость. Тем не менее, анализ показал, что в период с октября 2025 года действительно небольшое число неавторизованных пользователей получали доступ к незашифрованным файлам на сервере.<br/><br/>Раскрытые данные различались в зависимости от персоналии и включали номера соцстрахования, а также полные установочные данные (имена, даты рождения, демографические данные), контактную информацию и военно-учетные специальности.<br/><br/>Как заверяет <b>DMDC</b>, на данный момент у <b>DoW</b> нет никаких признаков неправомерного использования полученной информации.<br/><br/>Представитель <b>Министерства обороны</b> <a href="https://edition.cnn.com/2026/09/25/politics/pentagon-data-personnel-breach" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>сообщил</u></a> CNN, что утечка данных затронула 2,76 млн. ныне живущих и 294 000 погибших военнослужащих.<br/><br/>По состоянию на 2024 год, <b>DMDC</b> хранила не менее 60 млн. записей, охватывающих как военнослужащих, так и гражданских лиц, подрядчиков, членов их семей, пенсионеров и ветеранов.<br/><br/>Неясно, кто стоит за кибератакой. Ни одна известная группа пока, по всей видимости, не взяла на себя ответственность за нападение на <b>DMDC</b>. Так что будем следить.</div><a class="tgme_widget_message_link_preview" href="https://reddit.com/r/AirForce/comments/1wmotdr/question_about_data_breach_letter">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">Reddit</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/oV00LoL_CuHNSSboJ3q39eQ2RJtIGeqR15m1CNCgXFsAXs0KiuGxJInUEvxxn5Rjbm_SUq6OLy3GB2PzZGochN0k_H1GrrRAwYxS2b3x0N8I6QqJWWyzzZU4dw8d6AJN40he5qCGyfMOs-DsKA8hWyKcEe4OyPKWg6KPuxWB6PVpM3Nc3AM54sHF2K85EdHpVx7VQ2Gnwt2-kqGva2y5I2xsGFzRRKLO5cIauYW4xTt2ugMWvA61-QTWNH7Cqg1be6j_d4o_AO0bfoC2Eu688uUqD-HWDYSCHbgD7KoaPPKWWoQtJDkvFQnVGfB0f5ZV-TqwvK2iej5YxdrTFM4_JA.jpg');padding-top:100%"></i>
+  <div class="link_preview_title" dir="auto">From the AirForce community on Reddit: Question about Data Breach Letter</div>
+  <div class="link_preview_description" dir="auto">Explore this post and more from the AirForce community</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">6.02K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta">edited &nbsp;<a class="tgme_widget_message_date" href="https://t.me/true_secator/8664"><time datetime="2026-09-30T13:00:03+00:00" class="time">13:00</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8665" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2NSwidCI6MTc5MDkyMDUyOCwiaCI6ImY5NTg4NTRhMTg3YjdlMWZmMiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Исследователи <b>Лаборатории Касперского</b> <a href="https://securelist.ru/investigating-1c-compromise/117167/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>рассказали</u></a>, где искать следы атакующего при компрометации <b>1С</b>.<br/><br/>В этом году <b>ЛК</b> уже публиковала <a href="https://securelist.ru/how-1c-compromise-could-have-been-avoided/114764/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>разбор</u></a> реальных атак, в которых злоумышленники использовали некорректные настройки <b>1С</b>. Такие атаки могут в конечном итоге привести к шифрованию данных, удалению виртуальных машин и другим деструктивным последствиям.<br/><br/>В новом отчете исследователи поделились своим практическим опытом в части того, как расследовать такой инцидент, если он уже произошел, какие артефакты нужно искать и как анализировать журнал регистрации <b>1С</b> с учетом его специфики.<br/><br/>Артефакты использования в атаке платформы <b>1С</b> можно обнаружить в данных систем мониторинга или при непосредственном анализе скомпрометированного сервера. Важные источники информации - технологический журнал и журнал регистрации <b>1С</b>.<br/><br/>К маркерам подозрительной активности относятся, например, подозрительные подключения к консоли администрирования кластера серверов <b>1С</b>, создание новых информационных баз, ошибки при работе с 1С-шеллами, попытки выгрузки информационной базы и пр.<br/><br/>На серверах с программным обеспечением <b>1С</b> необходимо обращать внимание на любые срабатывания защитных решений.<br/><br/>В частности, продукты <b>Лаборатории Касперског</b>о обнаруживают и блокируют попытки вредоносной эксплуатации <b>1С</b> при помощи компонента <b>Behavior Detection</b>, детективу также различные вредоносные внешние обработки, доступные на <b>GitHub</b>.</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">5.44K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8665"><time datetime="2026-09-30T15:00:03+00:00" class="time">15:00</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8666" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2NiwidCI6MTc5MDkyMDUyOCwiaCI6ImQ1NjhkNzdiYjQ3OGYyOTQyNSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto"><b>Cisco</b> выпустила обновления для устранения критической 0-day в <b>Catalyst SD-WAN Manager</b> (отслеживаемой как <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-76504" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-76504</u></a>), которую злоумышленники активно используют для повышения своих привилегий до уровня администратора.<br/><br/>Ранее известное как <b>SD-WAN vManage</b>, ПО <b>Catalyst SD-WAN Manager</b> позволяет администраторам отслеживать и управлять до 6000 устройствами <b>SD-WAN</b> с единой панели управления.<br/><br/>Как <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-sdwan-webauth-xr8beuuU" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>сообщается</u></a>, в сентябре <b>Cisco PSIRT</b> обнаружила активную эксплуатацию этой CVE-2026-76504.<br/><br/>Она затрагивает все развертывания независимо от конфигурации системы, связана с управлением аутентификацией на основе сессий API и позволяет неаутентифицированным злоумышленникам удаленно получать доступ к уязвимым системам с правами администратора.<br/><br/>Уязвимость обусловлена некорректной обработкой кодировки URI в HTTP-запросе, что позволяет запросу обходить правило аутентификации, предназначенное для ограничения доступа к определенной конечной точке API.<br/><br/>Злоумышленник может использовать эту уязвимость, отправив специально сформированный HTTP-запрос к API уязвимой системы.<br/><br/>Так или иначе, <b>Cisco</b> пока не предоставила дополнительных подробностей об атаках с использованием CVE-2026-76504, но поделилась IOCs, отмечая, что злоумышленники используют %6a в качестве закодированного в URI символа &quot;j&quot; в вредоносных запросах.<br/><br/>Также рекомендуется проверять serviceproxy-access.log, расположенный в /var/log/nms/containers/service-proxy, и vmanage-server.log в каталоге /var/log/nms/ на наличие записей, связанных с j_security_check, от неизвестных или неавторизованных IP.<br/><br/>Для определения того, был ли скомпрометирован <b>Cisco Catalyst SD-WAN Manager</b>, клиенты могут обратиться в службу технической поддержки <b>Cisco (TAC</b>) и предоставить <a href="https://www.cisco.com/c/en/us/support/docs/routers/sd-wan/225842-remediate-catalyst-sd-wan-security.html#toc-hId--1909283632" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);">необходимые</a> файлы для проведения проверки.<br/><br/>Таким образом, CVE-2026-76504 - это уже пятая 0-day в <b>SD-WAN</b>, активно используемая злоумышленниками с начала года. Сегодня <b>CISA</b> <a href="https://www.cisa.gov/news-events/alerts/2026/09/30/cisa-adds-one-known-exploited-vulnerability-catalog" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>добавило</u></a> ее в свой каталог <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog?field_cve=CVE-2026-76504" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>KEV</u></a>.<br/><br/>Вообще же с ноября 2021 года в реестре <b>CISA </b><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search=&amp;amp;field_date_added_wrapper=all&amp;amp;field_cve=&amp;amp;sort_by=field_date_added&amp;amp;items_per_page=All&amp;amp;url=&amp;amp;f%5B0%5D=vendor_project%3A801" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>90 уязвимостей</u></a> <b>Cisco</b>, которые были использованы злоумышленниками, в том числе четыре в <b>Cisco Catalyst SD-WAN Manager</b>, включая семь, используемых бандами вымогателей.</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.96K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8666"><time datetime="2026-10-01T09:46:18+00:00" class="time">09:46</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8667" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2NywidCI6MTc5MDkyMDUyOCwiaCI6IjU4OTFkMWMxMzAyZjRlNGRhNiJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Более 543 000 учетных данных, потенциально скомпрометированных в общедоступных репозиториях <b>GitHub</b>, оставались действительными в июле, несмотря на меры безопасности платформы, направленные на предотвращение случайных утечек конфиденциальных данных.<br/><br/>Данные, полученные в результате сканирования 224 млн. хранилищ и более 58 млрд. файлов, показывают, что среднее время, в течение которого уникальные учетные данные оставались в открытом доступе, составляло 784 дня.<br/><br/>Исследование <b>Truffle Security</b> показало, что около 10% удостоверений личности для работы были выданы более 6,3 лет назад, а самое старое датируется 2009 годом.<br/><br/>В общей сложности исследователи выявили 543 699 уникальных учетных данных, которые неоднократно встречались в более чем 1,1 млн. файлов и репозиториев, включая копии в форках.<br/><br/>Оценка проводилась на наборе данных, собранном для обучения LLM на основе процесса сканирования, завершившегося 7 августа 2025 года.<br/><br/><b>Truffle Security</b> отметила, что количество скомпрометированных учетных данных на <b>GitHub</b> более чем вдвое превышает показатель августа, когда после сканирования <b>Hugging Face</b> было обнаружено 221 303 работающих учетных данных.<br/><br/>Исследователи отмечают, что плотность «секретной» информации со временем увеличилась: количество рабочих учетных данных выросло с 3,72 на миллион файлов в 2015 году до пика в 11,62 в 2025 году.<br/><br/>Отдельно в <b>Truffle Security </b>оценили метрики в части <b>Push Protection.</b><br/><br/>Функция защиты от случайной утечки учетных данных <b>GitHub, Push Protection</b>, была реализована в апреле 2022 года для пользователей с расширенными правами доступа и стала доступна для публичных репозиториев в мае 2023 года. Год спустя <b>GitHub</b> включил ее по умолчанию.<br/><br/><b>Push Protection</b> сканирует входящий код на наличие секретных шаблонов, таких как ключи API и токены доступа, и блокирует загрузку, если обнаруживает таковые. Однако он не отзывает ранее раскрытые учетные данные.<br/><br/>По данным <b>Truffle Security</b>, после активации функции <b>Push Protection</b> для всех пользователей <b>GitHub</b> в феврале 2024 года было раскрыто 199 843 учетных данных, выявленных в июле, что составляет примерно 36,8% от общего числа.<br/><br/>Чуть более половины (51,8%) активных учетных данных попадали в категории, которые не блокируются стандартной функцией защиты от push-уведомлений <b>GitHub</b>, включая строки подключения к базе данных и ключи API <b>Google</b>.<br/><br/>Так что, похоже, функция <b>Push Protection</b> эффективна в пределах своей зоны действия: после включения этой функции по умолчанию доля раскрытых учетных данных в защищенных категориях снизилась на 53%.<br/><br/>Рассматривая набор данных в более широком контексте, <b>Truffle Security </b><a href="https://trufflesecurity.com/blog/github-repos-exposed-543699-credentials-nobody-revoked-them" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>отметила</u></a>, некоторые типы учетных данных гораздо чаще отзываются, чем другие, в зависимости от используемой службы.<br/><br/>Например, из 101 886 подтвержденных токенов <b>npm</b> исследователи обнаружили только 1 работающий. В то же время из 126 963 учетных данных сервисов <b>Google Cloud</b>, 69 041 оставались действительными и рабочими на момент анализа.<br/><br/>Отдельно следует учитывать, что результаты исследования <b>Truffle Security</b> указывают на потенциальный объем утечки рабочих секретов на <b>GitHub</b>, но не раскрывают, какой процент этих секретов фактически был украден или использован злоумышленниками.</div><a class="tgme_widget_message_link_preview" href="https://trufflesecurity.com/blog/github-repos-exposed-543699-credentials-nobody-revoked-them">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">Trufflesecurity</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/iS-E9YTuIxp-s70jMIns7FPyx3IUqauJkYq9RisHUWb-pcGk34l7zVD9obOyK5VT31dikIL-Mhn24wDopo4JJ4xLpynyH7if_M98A12K0NQAbwZ3UWVL55TU59Iiw2ZNE7JwlvIWihnfz6e_gdAepfCNRypbmxjBxU_1ruSh16qYhNPXlL-4HuMWP_K0OM-YHoSVfY5ylDWkRzV6oWEz31tlbqZRgjHi2HuGc4L4SVJSe81buE5SfSx5WUUYLqA6FKNL0Io9UhFoQQFUOWHsYnp5p1phApqWnh-exoDNbr35K0PTeZiYTx4Uud8FRK9zpNyiIQUGevVyLpCRO4DrGw.jpg');padding-top:52.5%"></i>
+  <div class="link_preview_title" dir="auto">GitHub Repos Exposed 543,699 Credentials. Nobody Revoked Them. ◆ Truffle Security Co.</div>
+  <div class="link_preview_description" dir="auto">We scanned 224 million public GitHub repositories. Half of the credentials that still work had been exposed for more than two years, and the oldest since 2009.</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.44K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8667"><time datetime="2026-10-01T13:41:29+00:00" class="time">13:41</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8668" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2OCwidCI6MTc5MDkyMDUyOCwiaCI6ImJhMDM5YWQ3N2U1NzdlMmE0NSJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Подкатили подробности инцидента со взломом <b>Голландского института раскрытия уязвимостей (DIVD).</b><br/><br/>Как оказалось, взломать его сети удалось благодаря использованию цепочки из двух 0-day в системе обработки заявок с открытым исходным кодом <b>Zammad</b>.<br/><br/>В свою очередь, в <b>DIVD</b> ранее заявляли, что атака была «громкой и очень, очень хаотичной», и притом инициированной агентом <b>ИИ</b>, который действовал автономно и принимал решения о своих дальнейших шагах без внешнего вмешательства или указаний.<br/><br/>Благодаря тому, что ИИ-агент оставил после себя четкие объяснения своих решений, <b>DIVD</b> удалось получить обширные сведения об атаке, что позволило организации восстановить картину произошедшего.<br/><br/>По данным некоммерческой организации, две уязвимости, теперь отлеживаемые как CVE-2026-102489 и CVE-2026-102490, позволяли перехватывать сессии, удаленно выполнять код и повышать привилегии до уровня root.<br/><br/>После использования уязвимостей атакующий смог <a href="https://lnkd.in/p/eNtEQxmX" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>получить</u></a> доступ к другим сервисам, прочитать и похитить данные из систем <b>DIVD</b>, причем все действия были выполнены за считанные секунды благодаря автоматизации с помощью <b>ИИ</b>.<br/><br/>Такой симбиоз позволил злоумышленникам перехватывать сессии, удаленно запускать код и за считанные секунды повышать привилегии пользователя <b>Zammad</b> до уровня root благодаря агентной части этой хакерской атаки.<br/><br/>Благодаря сегментации сети и мерам реагирования на инциденты, злоумышленнику не удалось проникнуть глубже в сеть. Однако расследование всё ещё продолжается.<br/><br/><b>Zammad</b> - это платформа для обработки заявок в службу поддержки и ИТ-поддержки с открытым исходным кодом, использующая <b>ИИ</b> для управления запросами клиентов, обращениями в ИТ-поддержку и внутренними заявками.<br/><br/>Решение доступно как в виде самостоятельного, так и в виде размещенного на сервере сервиса. При этом <b>Zammad</b> <a href="https://zammad.com/en/customers" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>заявляет</u></a> о более чем 2000 клиентов и 55 000 пользователей, среди которых есть в числе прочих <b>De&#39;Longhi, Amnesty International и NextCloud.</b><br/><br/><b>DIVD</b> обнаружила зиродеи в сотрудничестве с <b>Merlon Security</b>, уведомила <b>Zammad</b> о проблеме и также предупредила других пользователей об уязвимых экземплярах.<br/><br/><b>DIVD</b> рекомендует пользователям <b>Zammad</b> обновиться до версии 7, которая считается безопасной, или как можно скорее отключить приложение. Помимо этого пообещала позже предоставить дополнительную информацию об инциденте.</div><a class="tgme_widget_message_link_preview" href="https://lnkd.in/p/eNtEQxmX">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">LinkedIn</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/gOfHE21D7QV_jegK0vtYfm8i7P-Nx8u5zqlA5oGbr3PmnL0wbHbeVv1sItehy25eAw1a9w8MobmtmN7P2v3QTXB_8mzw39uEFyZDITyQNz_a2qpTn0fwePP4iFs-5S65L4n_6UYIBaXP8_yEUmkn-6kFrezf6lyybAiUvfnzLBWh9VawMxwnORyagzdGVK5NQkppBU6j0vrhMsalzaaDWNfBV0LY_aBMTfcNh2lALdUEIQQaO-UTkDoKpzJo6wHfO8-xRZHGkKTxhLB2DqiGA_Xod-Qo7XxBca0KKLbVQK3DU-hkiGlK8MLiGW6dTHXuQzTPx8kQDWVdLVAlJ31YRg.jpg');padding-top:100%"></i>
+  <div class="link_preview_title" dir="auto">#zammad | DIVD Dutch Institute for Vulnerability Disclosure | 16 comments</div>
+  <div class="link_preview_description" dir="auto">When hackers get hacked, we deal with it in hacker style. While trying to figure out how the attackers got into our own systems, 𝘄𝗲 𝗳𝗼𝘂𝗻𝗱 𝘁𝘄𝗼 𝘇𝗲𝗿𝗼-𝗱𝗮𝘆 𝘃𝘂𝗹𝗻𝗲𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝗶𝗲𝘀 𝗶𝗻 𝗭𝗮𝗺𝗺𝗮𝗱. <br/>Used together, they allowed the attackers to hijack sessions, run code remotely…</div>
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">4.64K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8668"><time datetime="2026-10-01T14:24:32+00:00" class="time">14:24</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8669" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY2OSwidCI6MTc5MDkyMDUyOCwiaCI6ImViYmMyMmVjODE1Mjc0MjljNyJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Исследователи <a href="http://BI.ZONE/" target="_blank" rel="noopener"><b>BI.ZONE</b></a><b> </b><a href="https://bi.zone/expertise/blog/stilery-vykhodyat-na-novyy-uroven-avtomaticheskoe-ii-profilirovanie/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>предупреждают</u></a>, что стилеры выходят на&nbsp;новый уровень благодаря автоматизарованному ИИ‑профилированию. <br/><br/>В даркнете уже появились объявления о&nbsp;продаже стилеров, которые с&nbsp;помощью нейросети формируют профиль жертвы. <b>Бизоны</b> зафиксировали как минимум два таких объявления:&nbsp;Windows‑стилер <b>Bee Stealer</b> и&nbsp;комплексном macOS‑агенте <b>AVENGER</b>.<br/><br/>Стандартный набор функций современных стилеров практически не&nbsp;менялся годами. Базовый профиль сбора данных включает:<br/><br/>- Браузерные данные: пароли, cookie‑файлы активных сессий, данные автозаполнения, история, сохраненные данные банковских карт.<br/>- Криптоактивы: браузерные расширения кошельков, десктопные кошельки, данные аккаунтов криптобирж.<br/>- Мессенджеры и&nbsp;почта: сессии <b>Telegram</b> (данные tdata), <b>Discord, WhatsApp, Viber, </b>почтовые клиенты <b>Outlook, Thunderbird.</b><br/>- SSH‑ключи, файлы конфигурации, учетные данные облаков, менеджеры паролей (<b>KeePass, Bitwarden </b>и&nbsp;другие), FTP‑доступы.<br/>- Файлы и&nbsp;окружение: сбор документов по&nbsp;маскам из&nbsp;пользовательских каталогов, скриншоты, снимки веб‑камеры, данные о&nbsp;системе.<br/><br/>Современные стилеры поддерживают более 100&nbsp;версий браузеров и&nbsp;обходят актуальные механизмы защиты, включая A<b>pp‑Bound Encryption в&nbsp;Chrome</b>, что уже стало стандартом.<br/><br/>Кроме того, в&nbsp;их функциональность входят закрепление в&nbsp;системе, подмена адресов в&nbsp;буфере обмена (клиппер) и&nbsp;возможность самоудаления.<br/><br/>Отдельно стоит отметить относительно новую, но&nbsp;уже устоявшуюся функцию&nbsp;- сбор данных ИИ‑агентов. Современные версии стилеров выгружают аутентификационные данные и&nbsp;историю чатов из&nbsp;ИИ‑ассистентов для разработчиков и&nbsp;LLM‑клиентов.<br/><br/>Ценность таких данных заключается в&nbsp;следующем: скомпрометированные сессии перепродаются как доступ к&nbsp;платным подпискам и&nbsp;API‑ключам, а&nbsp;истории диалогов могут содержать исходный код, внутренние документы, токены и&nbsp;учетные записи, оставленные пользователем в&nbsp;переписке с&nbsp;ИИ‑агентом.<br/><br/>Тем самым такие данные раскрывают для атакующего дополнительную информацию о&nbsp;жертве и&nbsp;ее&nbsp;предполагаемом работодателе. Так что  на&nbsp;фоне всех этих возможностей зародилась следующая ступень развития&nbsp;- автоматическое ИИ‑профилирование.<br/><br/>Полученные в ходе атаки данные пропускаются через языковую модель, которая формирует краткий отчет о&nbsp;пользователе скомпрометированного устройства.<br/><br/>В&nbsp;<b>Bee Stealer</b> значительная часть собранного лога обрабатывается нейросетью на&nbsp;стороне панели оператора, а&nbsp;результат сохраняется в&nbsp;файлы ProfileRu.txt и&nbsp;ProfileEn.txt.<br/><br/>При этом в&nbsp;отчете автоматически заполняются поля с&nbsp;описанием предполагаемой профессии жертвы, сферы интересов, посещаемых ресурсов и&nbsp;назначения ключевых доменов из&nbsp;лога.<br/><br/>Один из примеров такого профилирования: «IT‑специалист и&nbsp;веб‑разработчик с&nbsp;интересом к&nbsp;безопасности» с&nbsp;указанием связанной с&nbsp;разработкой активности и&nbsp;отобранных доменов.<br/><br/>В&nbsp;многофункциональном вредоносном ПО для <b>macOS AVENGER</b> анализируются история браузера, содержимое терминала, сообщения, почта и&nbsp;файлы конфигурации, а&nbsp;на&nbsp;их&nbsp;основе выстраивается профиль жертвы с&nbsp;указанием места работы, используемых банков, бирж и&nbsp;криптоактивов.<br/><br/>В целом, новый функционал позволяет атакующему ускорить работу с&nbsp;массивами логов, которые могут содержать тысячи cookie‑файлов, учетных записей и&nbsp;доменов.<br/><br/>Оценивать вручную, какой профиль был собран (рядового пользователя или сотрудника с&nbsp;доступом к&nbsp;инфраструктуре организации), долго. <br/><br/>Таким образом, ИИ‑профилирование ускоряет процесс, позволяет приоритизировать жертв, готовить для вторичной продажи и снижает порог для атак в части валификации атакующего.</div>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.61K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8669"><time datetime="2026-10-01T15:51:37+00:00" class="time">15:51</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div><div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message text_not_supported_wrap js-widget_message" data-post="true_secator/8670" data-view="eyJjIjotMTM4NTU5MDAxMywicCI6ODY3MCwidCI6MTc5MDkyMDUyOCwiaCI6IjRiNTU4NzQ2Y2NmZmIzOGUyNCJ9">
+  <div class="tgme_widget_message_user"><a href="https://t.me/true_secator"><i class="tgme_widget_message_user_photo bgcolor3" data-content="S"><img src="https://cdn4.telesco.pe/file/HvlkFluab378RyKci_YUsaogfR5b6g0xxu6Li63caM4Z3JoIiWoIzigrCPrgLrRXqqYazn_GAi7bEtzBuDEpES-i2kaQHzAkms82RO5PN2lYRUBhPosdVEDxaMtgpT5tyRLhZ1wEJMS3Bl2xIr3DPEjNarOpXxduo1A9eto3O5Cv_jQWW8jMppuODbuuxE_j-8jVZ2YrnyCL-6l4GfiCVcaDXLuw59lLjPD1cF1IDhv4XNlMC1P925PAlw73iXqrMK8tonulaQ1FdBlPV48PJJdD6Oi1z1xOY2g9xAkFfxq86bBIJQjtlMGncs7qXQ7GKmHn4Zm7x7oKr9YtIhOecw.jpg"></i></a></div>
+  <div class="tgme_widget_message_bubble">
+    
+        <i class="tgme_widget_message_bubble_tail">
+      <svg class="bubble_icon" width="9px" height="20px" viewBox="0 0 9 20">
+        <g fill="none">
+          <path class="background" fill="#ffffff" d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
+          <path class="border_1x" fill="#d7e3ec" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
+          <path class="border_2x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
+          <path class="border_3x" d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
+        </g>
+      </svg>
+    </i>
+    <div class="tgme_widget_message_author accent_color"><a class="tgme_widget_message_owner_name" href="https://t.me/true_secator"><span dir="auto">SecAtor</span></a></div>
+
+
+<div class="tgme_widget_message_text js-message_text" dir="auto">Продолжаем отслеживать трендовые угрозы и на текущий момент выделим следующие:<br/><br/>1. <b>TeamViewer</b> <a href="https://www.teamviewer.com/en-us/resources/trust-center/security-bulletins/tv-2026-1010/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>предупредила</u></a> своих клиентов о необходимости немедленного устранения ряда серьезных уязвимостей, затрагивающих клиентское и хост-программное обеспечение.<br/><br/>Наиболее серьезная - это обход контроля доступа к удаленным сессиям (<a href="https://nvd.nist.gov/vuln/detail/cve-2026-92370" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-92370</u></a>), возникающий из-за некорректной уязвимости контроля доступа в <b>TeamViewer Full Client и Host для Windows, Linux и macOS</b>, которая позволяет удаленным злоумышленникам выполнять несанкционированные действия, ведущие к RCE на целевых системах.<br/><br/>Четыре другие проблемы, включают в себя обход пути (<a href="https://nvd.nist.gov/vuln/detail/cve-2026-19743" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-19743</u></a>), переполнение буфера в куче (<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-92368" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-92368</u></a>), состояние гонки TOCTOU (<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-92369" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-92369</u></a>) и некорректную проверку пути (<a href="https://nvd.nist.gov/vuln/detail/CVE-2026-92371" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-92371</u></a>), которые позволя.т локальным злоумышленникам удаленно получить доступ к выполнению кода с привилегиями текущего пользователя или повысить свои привилегии до уровня NT AUHORITY/SYSTEM или root.<br/><br/>Несмотря на то, что компания не обнаружила доказательств наличия общедоступного PoC или активной эксплуатации, она настоятельно рекомендовала клиентам обновить <b>TeamViewer</b> до версии 15.82.<br/><br/>2. Как <a href="https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>сообщает</u></a> <b>Microsoft</b>, хакеры начали использовать уязвимость внедрения команд ОС CVE-2026-73570 (CVSS 8,9) в<b> Zimbra Collaboration Suite (ZCS) </b>до версии 10.1.20 вскоре после выпуска обновлений, еще до публичного раскрытия информации.<br/><br/>Исправления для CVE-2026-73570 были выпущены 20 июля в версии <b>ZCS</b> 10.1.20, а информация о ней была обнародована 13 августа. В период с 28 июля по 7 августа <b>Microsoft</b> обнаружила два различных инструмента сканирования, работающих вне полосы пропускания и исследующих уязвимую точку внедрения.<br/><br/>3. <b>WatchGuard</b> <a href="https://psirt.watchguard.com/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>выпустила</u></a> исправления для 15 уязвимостей, связанных с выполнением кода, DoS-атаками, авторизацией и обходом путей в <b>Fireware OS</b>, включая критическую ошибку RCE.<br/><br/>CVE-2026-86131 (CVSS 9.2), описывается как проблема внедрения кода в способ обработки операционной системой конфигураций клиентов <b>BOVPN</b> через TLS.  Успешная эксплуатация позволяет удалённому злоумышленнику, контролирующему удалённый VPN-сервер, выполнять команды с правами root на подключающемся устройстве <b>Firebox</b>.<br/><br/>4. <b>Bitget</b> <a href="https://x.com/bitget/status/2105147238804537496" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>полагает</u></a>, что злоумышленники, укравшие у нее на прошлой неделе 387,5 млн. долл., взломали системы, используя 0-day в продуктах безопасности сторонних разработчиков.<br/><br/>По данным <b>SlowMist и Mandiant</b> (<a href="https://github.com/slowmist/Knowledge-Base/blob/master/open-report-V2/incident-response/SlowMist%20Investigation%20Progress%20Report%20-%20Bitget_en-us.pdf" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>1</u></a> и <a href="https://img.bgstatic.com/multiLang/events/MFR26-1029_Status_Update_Bitget_0930.pdf" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>2</u></a>), после взлома злоумышленники запустили веб-оболочки на одном из взломанных устройств и вредоносное ПО на сервере обработки заданий для производственного кошелька криптовалютной биржи, а также специально разработанный инструмент для вывода средств, использованный для осуществления кражи криптовалюты после полуночи 25 сентября.<br/><br/><b>Bitget</b> <a href="https://www.bitget.com/support/articles/12560603896108#:~:text=The%20Bitget%20Recovery%20Bounty%20Program" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>запустила</u></a> программу вознаграждений, в рамках которой обещает 5% тем, кто поможет вернуть или заморозить средства, украденные в ходе атаки.<br/><br/>5. <b>KiteWorks</b> <a href="https://www.kiteworks.com/company/press-releases/kiteworks-restores-systems-credible-threat/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>выпустила</u></a> исправление для своей платформы передачи файлов, обрадовав клиентов тем, что их серверы можно безопасно снова подключить к интернету.<br/><br/>На прошлой неделе <b>Kiteworks</b> рекомендовала клиентам отключить серверы после того, как получила предупреждение от правоохранительных органов о том, что хакеры готовятся к атакам на ее продукты.<br/><br/>6. В библиотека <b>Python Authlib </b>не смогли закрыть <a href="https://kb.cert.org/vuls/id/762428" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>ошибку</u></a> с пустым полем подписи, которая позволяет злоумышленникам обходить проверки подписи и, возможно, операции аутентификации <b>OAuth и OpenID.</b><br/><br/>7. <b>Palo Alto Networks</b> <a href="https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>сообщает</u></a>, что по состоянию на 27 сентября ими выявлено около 50 000 потенциально уязвимых для недавних <a href="https://labs.watchtowr.com/here-we-go-again-citrix-netscaler-dtls-preauth-memory-overflow-cve-2026-88772/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-88772</u></a> и <a href="https://labs.watchtowr.com/oh-look-the-foot-gun-went-off-again-citrix-netscaler-preauth-command-injection-cve-2026-88771/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>CVE-2026-88771</u></a> экземпляров <b>NetScaler</b>.<br/><br/>8. Разработчик ПО <b>Натан Фарго</b> выпустил <b>Relapse</b>, эксплойт для взлома последних версий прошивки <b>PS5</b>. Он доступен на <a href="https://github.com/ntfargo/Relapse-Exploit" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>GitHub</u></a>.<br/><br/>9. Исследование <b>Google</b> показало, как <b>ИИ</b> меняет темпы и характер обнаружения уязвимостей. Согласно <a href="https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>отчету</u></a> <b>GTIG</b>, количество выявляемых уязвимостей каждый месяц в 2026 году, как и среднемесячное количество, используемых, удвоилось.<br/><br/>10. <b>Позитивы</b> в блоге <a href="https://habr.com/ru/companies/pt/articles/1088628/" target="_blank" rel="noopener" onclick="return confirm('Open this link?\n\n'+this.href);"><u>рассказали</u></a> про то, как им удалось найти  CVE-2026-43783: LPE через <b>DesktopServicesHelper в macOS</b> 26.5.</div><a class="tgme_widget_message_link_preview" href="https://teamviewer.com/en-us/resources/trust-center/security-bulletins/tv-2026-1010">
+  
+  <div class="link_preview_site_name accent_color" dir="auto">TeamViewer</div>
+  <i class="link_preview_image" style="background-image:url('https://cdn4.telesco.pe/file/HSl7gmGMvEZjp0QBikDcvAHA55ClXFERzb8LX44hPZLczMIgYL8LEXEZvCyQlgdX54OVTMssHBc6YibyfeorU6pRktrRQ-VzCFvniPBlED0P9AHyq78vJJeaGJ8icFriTPfCjK8kmQe9QF6l3QMO009bgLMkNbb6IGj93RS6EvfA_5sSu49SFyG25rtZfzaDjXdGECYrMp2U6fWjXNFkG8PBxc6OIJSLH-Jt5rpcgrA_zhzR6PxQCl8CuMcMZ-JEEyQrjMoGJQYeBqsAK8RgPrtR25wtu8jvd9rNSLFN_-RnMn_9jJFd95LqbT4BylGUOYjBf3A7m23uS4ZMe2QGQw.jpg');padding-top:52.375%"></i>
+  <div class="link_preview_title" dir="auto">TV-2026-1010</div>
+  
+</a>
+<div class="tgme_widget_message_footer compact js-message_footer">
+  
+  <div class="tgme_widget_message_info short js-message_info">
+    <span class="tgme_widget_message_views">3.13K</span><span class="copyonly"> views</span><span class="tgme_widget_message_meta"><a class="tgme_widget_message_date" href="https://t.me/true_secator/8670"><time datetime="2026-10-01T17:00:03+00:00" class="time">17:00</time></a></span>
+  </div>
+</div>
+  </div>
+  
+</div></div>
+    </section>
+  </div>
+</main>
+    <script src="//telegram.org/js/jquery.min.js"></script>
+    <script src="//telegram.org/js/jquery-ui.min.js"></script>
+    <script src="//telegram.org/js/tgwallpaper.min.js?3"></script>
+<script src="//telegram.org/js/tgsticker.js?32"></script>
+
+    <script src="//telegram.org/js/widget-frame.js?68"></script>
+    <script src="//telegram.org/js/telegram-web.js?14"></script>
+    <script>TWeb.init();
+</script>
+    
+  </body>
+</html>
+<!-- page generated in 241.75ms -->

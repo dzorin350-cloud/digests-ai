@@ -1,0 +1,96 @@
+# Шаблон: утренний личный дайджест: экономика, свои облигации, ИИ-агенты.
+# Это пример: список бумаг ниже — образец. Свой портфель держите в своём конфиге (digests/ не попадает в git,
+# а в облачных запусках его хранит `digest state push/pull` в приватном репозитории).
+# Источники — разумный старт; агент добавит новые сам (`digest prompt tune`). Перед запуском:
+# `digest sources check <id>` — что-то из сети может быть недоступно.
+title: Утренний дайджест
+language: ru
+timezone: Europe/Moscow
+reader: >-
+  Частный инвестор в российские облигации и человек, который строит продукты на ИИ-агентах.
+  Читает дайджест утром за 3 минуты; лучше пустой блок, чем пересказ вчерашнего.
+style: >-
+  Коротко, с цифрами (ставка, доходность, рейтинг, даты). Мнения аналитиков и экспертов — да, но отдельно
+  от фактов и всегда с указанием, чьё это мнение.
+remind_after_days: null   # напоминать ли один раз о важном сюжете через N дней
+
+cadences:
+  daily: {enabled: true, max_age_hours: 36}
+  weekly: {enabled: true, weekday: 6}     # воскресенье
+  monthly: {enabled: true, day: 1}
+
+delivery:
+  file: true
+  email: []                 # ["you@example.com"]; SMTP_* в .env
+  telegram_chat_id: null    # "123456789"; TELEGRAM_BOT_TOKEN в .env
+
+news_search: {provider: google, hl: ru, gl: RU}
+
+blocks:
+  - id: macro
+    title: Экономика России и мира
+    ref: E
+    brief: >-
+      Решения и сигналы ЦБ РФ (ключевая ставка — только если её изменили или ЦБ поменял сигнал; «ставку
+      сохранили, как ожидалось» — не новость), регулирование, инфляция и данные Росстата,
+      бюджет и налоги, курс рубля при сильных движениях, санкции с экономическим эффектом, решения ФРС/ЕЦБ,
+      нефть при сильных движениях. Не нужны: ежедневные котировки без события, прогнозы отдельных аналитиков,
+      светская хроника бизнеса.
+    include: [ключевая ставка, инфляция, ЦБ, Минфин, ОФЗ, бюджет, санкции, ФРС]
+    exclude: [гороскоп, криптовалют]
+    expert_comments: true
+    max_items: 5
+    sources:
+      - {kind: rss, url: "https://www.cbr.ru/press/event/", feed_url: "https://www.cbr.ru/rss/eventrss", name: "Банк России — события", trust: 0.95, fulltext: false}
+      - {kind: rss, url: "https://www.interfax.ru/business/", feed_url: "https://www.interfax.ru/rss.asp", name: "Интерфакс", trust: 0.85}
+      - {kind: rss, url: "https://www.rbc.ru/economics/", feed_url: "https://rssexport.rbc.ru/rbcnews/news/30/full.rss", name: "РБК", trust: 0.75, fulltext: false}
+      - {kind: rss, url: "https://www.kommersant.ru/rubric/3", feed_url: "https://www.kommersant.ru/RSS/section-economics.xml", name: "Коммерсантъ — экономика", trust: 0.8}
+      - {kind: telegram, url: "https://t.me/s/russianmacro", name: "TG Russian Macro", trust: 0.7}
+      - {kind: news_search, query: "ключевая ставка ЦБ", name: "Поиск: ключевая ставка", trust: 0.7}
+      - {kind: news_search, query: "ФРС OR ЕЦБ ставка решение", name: "Поиск: ФРС/ЕЦБ", trust: 0.6}
+
+  - id: bonds
+    title: Мои облигации
+    ref: B
+    brief: >-
+      Только события по эмитентам из списка: рейтинги (повышение, понижение, прогноз, отзыв), дефолты и
+      техдефолты, оферты, выплаты и переносы купонов, новые выпуски и размещения, отчётность с существенными
+      изменениями долга, суды и банкротства, крупные сделки. Для ОФЗ — аукционы Минфина и параметры выпусков.
+      Повтор уже известного события (например, обсуждение того же понижения рейтинга) — не новость.
+    require_watch_match: true
+    show_quiet_watch: true     # строка по каждой бумаге, даже если новостей нет
+    expert_comments: true      # что говорят аналитики (с указанием, кто)
+    max_items: 6
+    watchlist:
+      - {name: Полипласт, aliases: [Polyplast], query: "Полипласт облигации OR рейтинг OR купон"}
+      - {name: Брусника, aliases: [Brusnika], query: "Брусника облигации OR рейтинг OR купон"}
+      - {name: ОФЗ, aliases: [облигации федерального займа], query: "ОФЗ аукцион Минфин", note: "аукционы и новые выпуски; держу длинные ОФЗ-ПД"}
+      - {name: Ростелеком, aliases: [Rostelecom], query: "Ростелеком облигации OR рейтинг OR купон"}
+      - {name: РЖД, aliases: [Российские железные дороги], query: "РЖД облигации OR рейтинг OR купон OR размещение"}
+      - {name: АФК Система, aliases: [АФК «Система», AFK Sistema], query: "\"АФК Система\" облигации OR рейтинг OR долг"}
+      - {name: ВУШ, aliases: [Whoosh, Вуш], query: "Whoosh OR ВУШ облигации OR рейтинг OR купон"}
+    sources:
+      - {kind: news_search, query: "{watch}", name: "Поиск по списку бумаг", trust: 0.7}
+      - {kind: auto, url: "https://www.acra-ratings.ru/press-releases/", name: "АКРА — пресс-релизы", trust: 0.9}
+      - {kind: auto, url: "https://raexpert.ru/releases/", name: "Эксперт РА — релизы", trust: 0.9}
+      - {kind: rss, url: "https://www.interfax.ru/business/", feed_url: "https://www.interfax.ru/rss.asp", name: "Интерфакс", trust: 0.85}
+
+  - id: agents
+    title: ИИ-агенты
+    ref: A
+    brief: >-
+      Новое в мире ИИ-агентов и агентных инструментов для разработки: релизы и крупные обновления
+      (Claude Code, Codex, Cursor, Gemini CLI, Kimi, OpenHands и т.п.), новые модели с заметно лучшей работой
+      агентов, протоколы и стандарты (MCP, A2A), заметные open-source проекты, практики и разборы внедрений
+      с цифрами. Не нужны: хайп без продукта, «топ-10 промптов», новости о финансировании без продукта.
+    include: [agent, агент, MCP, Claude Code, Codex, tool use, coding agent]
+    max_items: 5
+    sources:
+      - {kind: rss, url: "https://simonwillison.net/", feed_url: "https://simonwillison.net/atom/everything/", name: "Simon Willison", trust: 0.85, fulltext: false}
+      - {kind: rss, url: "https://openai.com/news/", feed_url: "https://openai.com/news/rss.xml", name: "OpenAI News", trust: 0.85}
+      - {kind: html, url: "https://www.anthropic.com/news", name: "Anthropic News", trust: 0.9, selectors: {link_pattern: "^https://www\\.anthropic\\.com/news/[a-z0-9-]{6,}$"}}
+      - {kind: rss, url: "https://huggingface.co/blog", feed_url: "https://huggingface.co/blog/feed.xml", name: "Hugging Face Blog", trust: 0.75}
+      - {kind: rss, url: "https://www.latent.space/", feed_url: "https://www.latent.space/feed", name: "Latent Space", trust: 0.75, fulltext: false}
+      - {kind: rss, url: "https://news.ycombinator.com/", feed_url: "https://hnrss.org/newest?q=agent+OR+agents+OR+MCP&points=150", name: "Hacker News (agents, 150+)", trust: 0.6}
+      - {kind: telegram, url: "https://t.me/s/ai_newz", name: "TG эйай ньюз", trust: 0.7}
+      - {kind: telegram, url: "https://t.me/s/seeallochnaya", name: "TG Сиолошная", trust: 0.7}
